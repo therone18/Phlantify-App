@@ -1,12 +1,12 @@
 import { View, Text, SafeAreaView, Button, StyleSheet } from "react-native";
 import PlantCarousel from "../components/PlantCarousel";
 import MyCarousel from "../components/MyCarousel";
-//Homepage should show history of previously identified plants - /
+//Homepage should show history of previously identified plants - 
 //Homepage should show panels of plants and their descriptions - /
-//Homepage should have a button to direct to Camera feature activity - /
-//Homepage should have a button to direct to plant encyclopedia activity   - /
+//Homepage should have a button to direct to Camera feature activity - 
+//Homepage should have a button to direct to plant encyclopedia activity   - 
 
-//<Button title="PRESS TO GO TO HISTORY" onPress={() => navigation.navigate('AboutUs')}/>
+//Should Always show the header
 
 const Homepage = ({ navigation }) => {
   return (
