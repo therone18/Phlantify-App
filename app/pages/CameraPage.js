@@ -1,6 +1,6 @@
 import { View, Text } from "react-native"
 
-const CameraPage = () => {
+const CameraPage = ({navigation}) => {
     return (
         <View>
             <Text>

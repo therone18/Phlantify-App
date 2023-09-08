@@ -21,11 +21,11 @@ const Main = () =>{
         
         //<NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name="Homepage" component={Homepage} options={{title: "Welcome"}}/>
-                <Stack.Screen name="History" component={History}/>
-                <Stack.Screen name="CameraPage" component={CameraPage}/>
-                <Stack.Screen name="Encyclopedia" component={Encyclopedia}/>
-                <Stack.Screen name="AboutUs" component={AboutUs}/>
+                <Stack.Screen name="Homepage" component={Homepage}  options={{ headerShown: false }}/>
+                <Stack.Screen name="History" component={History} options={{ headerShown: false }}/>
+                <Stack.Screen name="CameraPage" component={CameraPage} options={{ headerShown: false }}/>
+                <Stack.Screen name="Encyclopedia" component={Encyclopedia} options={{ headerShown: false }}/>
+                <Stack.Screen name="AboutUs" component={AboutUs} options={{ headerShown: false }}/>
             </Stack.Navigator>
         //</NavigationContainer>
         
