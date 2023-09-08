@@ -12,6 +12,8 @@ import CameraPage from "./pages/CameraPage";
 import Encyclopedia from "./pages/Encyclopedia";
 import AboutUs from "./pages/AboutUs";
 
+import PlantCarousel from './components/PlantCarousel';
+
 
 const Stack = createNativeStackNavigator()
 
@@ -26,6 +28,7 @@ const Main = () =>{
                 <Stack.Screen name="CameraPage" component={CameraPage} options={{ headerShown: false }}/>
                 <Stack.Screen name="Encyclopedia" component={Encyclopedia} options={{ headerShown: false }}/>
                 <Stack.Screen name="AboutUs" component={AboutUs} options={{ headerShown: false }}/>
+                <Stack.Screen name="PlantCarousel" component={PlantCarousel} options={{ headerShown: false }}/>
             </Stack.Navigator>
         //</NavigationContainer>
         

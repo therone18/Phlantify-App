@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -6,17 +6,31 @@ import {
   StyleSheet,
   ImageBackground,
   Dimensions,
+  TouchableHighlight,
 } from "react-native";
 import Carousel, { Pagination } from "react-native-snap-carousel";
 import { plants } from "../static/data";
 import { resizeMode } from "deprecated-react-native-prop-types/DeprecatedImagePropType";
 import { LinearGradient } from "expo-linear-gradient";
+/*
+    TO DO:
+        - make the highlight for the panels only happen at single presses
+        - make the panels snap to the screen
+        - Automatically move the panels when not touched - /
+
+*/ 
 
 
-
-export default class PlantCarousel extends React.Component {
+export default function PlantCarousel() {
+   
   screenWidth = Math.round(Dimensions.get("window").width);
-
+  const indexChecker = (index) =>{
+    if (index == 3){
+        setTimeout(()=>{
+            this._carousel.snapToItem(0, animated = true, fireCallback = true)
+        }, 3000)
+    }
+  }
   
 
   state = {
@@ -24,15 +38,22 @@ export default class PlantCarousel extends React.Component {
     activeSlide: 0,
   };
   _renderItem = ({ item }) => {
-
+    
     const imagePaths = {
-        "12": require('../media/12.jpg'),
-        "19": require('../media/19.jpg'),
-        "21": require('../media/21.jpg'),
-        "26": require('../media/26.jpg'),
-      }
+      12: require("../media/12.jpg"),
+      19: require("../media/19.jpg"),
+      21: require("../media/21.jpg"),
+      26: require("../media/26.jpg"),
+    };
     const imageSource = imagePaths[item.thumbnailImage];
+    
 
+    const handlePress = () => {
+        
+      console.log(item)
+    };
+
+    
 
     return (
       <ImageBackground
@@ -40,6 +61,11 @@ export default class PlantCarousel extends React.Component {
         style={styles.panel}
         resizeMode="cover"
       >
+        <TouchableHighlight
+          onPress={handlePress}
+          underlayColor="#C4661F80" 
+          style={styles.panel}
+        >
         <LinearGradient
           colors={["#C4661FCC", "#00000000"]}
           start={{ x: 0, y: 1 }}
@@ -49,11 +75,12 @@ export default class PlantCarousel extends React.Component {
           <Text style={styles.title}>{item.localName}</Text>
           <Text style={styles.subtitle}>{item.scientificName}</Text>
         </LinearGradient>
+        </TouchableHighlight>
       </ImageBackground>
     );
   };
 
-  render() {
+  
     return (
       <View style={styles.container}>
         <Carousel
@@ -62,11 +89,17 @@ export default class PlantCarousel extends React.Component {
           data={this.state.plants}
           sliderWidth={this.screenWidth}
           itemWidth={this.screenWidth}
-          onSnapToItem={(index) => this.setState({ activeSlide: index })}
+          enableSnap={true}
+          autoplay = {true}
+          autoplayDelay={1000}
+          autoplayInterval={8000}
+          ref={(c) => { this._carousel = c; }}
+          onSnapToItem={() => indexChecker(this._carousel.currentIndex)}
+          
         />
       </View>
     );
-  }
+  
 }
 
 const styles = StyleSheet.create({
@@ -94,6 +127,6 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 18,
     color: "white",
-    fontStyle: "italic"
+    fontStyle: "italic",
   },
 });
