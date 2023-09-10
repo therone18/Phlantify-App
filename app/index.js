@@ -14,8 +14,14 @@ import AboutUs from "./pages/AboutUs";
 
 import PlantCarousel from './components/PlantCarousel';
 
+/*
+    TODO:
+        - Dynamically get plants from the database
+*/
+
 
 const Stack = createNativeStackNavigator()
+
 
 const Main = () =>{
     

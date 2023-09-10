@@ -1,28 +1,39 @@
 import { View, Text, SafeAreaView, Button, StyleSheet } from "react-native";
 import PlantCarousel from "../components/PlantCarousel";
-import MyCarousel from "../components/MyCarousel";
-//Homepage should show history of previously identified plants - 
-//Homepage should show panels of plants and their descriptions - /
-//Homepage should have a button to direct to Camera feature activity - 
-//Homepage should have a button to direct to plant encyclopedia activity   - 
+import Header from "../components/Header";
+import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
 
+//Homepage should show history of previously identified plants -
+//Homepage should show panels of plants and their descriptions - /
+//Homepage should have a button to direct to Camera feature activity -
+//Homepage should have a button to direct to plant encyclopedia activity   -
 //Should Always show the header
+
+/*
+    TODO:
+        - Put "Plants of the day" on top of the Plant Carousel
+        - Set up Child - to - Parent data passing
+*/
 
 const Homepage = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.main}>
-      <View style={styles.container}>
-        <Text style={styles.centeredText}>Link to Encyclopedia Goes Here</Text>
-
-        <Text>Plants of the Day</Text>
-        <PlantCarousel />
+      <Header />
+      <View>
+        <Text style={styles.titletext}>Plants of the Day</Text>
       </View>
 
-      <View style={styles.container}>
+      
+      <PlantCarousel />
+      
+        
+      
+
+      <View style={styles.containerHistory}>
         <Text style={styles.centeredText}>Plant History Goes Here</Text>
       </View>
 
-      <View style={styles.container}>
+      <View style={styles.container} >
         <Text style={styles.centeredText}>
           Link to Camera Feature Goes here
         </Text>
@@ -36,15 +47,24 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     alignItmes: "center",
+    height: "100%",
+    backgroundColor: "#F9EBC7",
   },
   centeredText: {
     textAlign: "center",
   },
-  container: {
+  containerHistory: {
     flex: 1,
-    flexDirection: "column",
-    backgroundColor: "#F9EBC7",
-    height: 100,
+    height: "100%",
+    
+
+  },
+  titletext: {
+    paddingHorizontal: 15,
+    paddingTop: 20,
+    color: "#783D19",
+    fontSize: 25,
+    fontWeight: "600",
   },
 });
 

@@ -7,6 +7,7 @@ import {
   ImageBackground,
   Dimensions,
   TouchableHighlight,
+  TouchableOpacity
 } from "react-native";
 import Carousel, { Pagination } from "react-native-snap-carousel";
 import { plants } from "../static/data";
@@ -17,28 +18,25 @@ import { LinearGradient } from "expo-linear-gradient";
         - make the highlight for the panels only happen at single presses
         - make the panels snap to the screen
         - Automatically move the panels when not touched - /
+        
 
-*/ 
-
+*/
 
 export default function PlantCarousel() {
-   
   screenWidth = Math.round(Dimensions.get("window").width);
-  const indexChecker = (index) =>{
-    if (index == 3){
-        setTimeout(()=>{
-            this._carousel.snapToItem(0, animated = true, fireCallback = true)
-        }, 3000)
+  const indexChecker = (index) => {
+    if (index == 3) {
+      setTimeout(() => {
+        this._carousel.snapToItem(0, (animated = true), (fireCallback = true));
+      }, 3000);
     }
-  }
-  
+  };
 
   state = {
     plants,
     activeSlide: 0,
   };
   _renderItem = ({ item }) => {
-    
     const imagePaths = {
       12: require("../media/12.jpg"),
       19: require("../media/19.jpg"),
@@ -46,79 +44,78 @@ export default function PlantCarousel() {
       26: require("../media/26.jpg"),
     };
     const imageSource = imagePaths[item.thumbnailImage];
-    
 
     const handlePress = () => {
-        
-      console.log(item)
+      console.log(item);
     };
 
-    
-
     return (
+      
+      <TouchableHighlight underlayColor="#F9EBC7"  onPress={handlePress} style={styles.backgroundImage}>
       <ImageBackground
         source={imageSource}
-        style={styles.panel}
-        resizeMode="cover"
+        style={styles.backgroundImage}
       >
-        <TouchableHighlight
-          onPress={handlePress}
-          underlayColor="#C4661F80" 
-          style={styles.panel}
-        >
+        
         <LinearGradient
           colors={["#C4661FCC", "#00000000"]}
           start={{ x: 0, y: 1 }}
           end={{ x: 0, y: 0 }}
-          style={styles.panel}
+          style={styles.gradient}
         >
-          <Text style={styles.title}>{item.localName}</Text>
-          <Text style={styles.subtitle}>{item.scientificName}</Text>
+          <View style={styles.plantDetails}>
+            
+            <Text style={styles.title}>{item.localName}</Text>
+            <Text style={styles.subtitle}>{item.scientificName}</Text>
+          </View>
         </LinearGradient>
-        </TouchableHighlight>
       </ImageBackground>
+      </TouchableHighlight>
     );
   };
 
-  
-    return (
-      <View style={styles.container}>
-        <Carousel
-          layout="default"
-          renderItem={this._renderItem}
-          data={this.state.plants}
-          sliderWidth={this.screenWidth}
-          itemWidth={this.screenWidth}
-          enableSnap={true}
-          autoplay = {true}
-          autoplayDelay={1000}
-          autoplayInterval={8000}
-          ref={(c) => { this._carousel = c; }}
-          onSnapToItem={() => indexChecker(this._carousel.currentIndex)}
-          
-        />
-      </View>
-    );
-  
+  return (
+    <View style={styles.container}>
+      <Carousel
+        layout="default"
+        renderItem={this._renderItem}
+        data={this.state.plants}
+        sliderWidth={this.screenWidth}
+        itemWidth={this.screenWidth}
+        enableSnap={true}
+        autoplay={true}
+        autoplayDelay={1000}
+        autoplayInterval={8000}
+        ref={(c) => {
+          this._carousel = c;
+        }}
+        onSnapToItem={() => indexChecker(this._carousel.currentIndex)}
+      />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    width: "100%",
     backgroundColor: "#F9EBC7",
+    marginVertical: 10,
+    height: "20%",
   },
-  panel: {
+
+  backgroundImage: {
     flex: 1,
-    width: "100%",
-    justifyContent: "flex-end", // Vertical alignment at the bottom
-    alignItems: "flex-start", // Horizontal alignment on the left
+
   },
-  image: {
+  gradient: {
     flex: 1,
-    width: null,
-    height: null,
+    height: "100%",
+    justifyContent: "flex-end", // Items at the bottom
+    alignItems: "flex-start", // Items at the left
   },
+  plantDetails: {
+    padding: 15,
+  },
+
   title: {
     fontSize: 24,
     fontWeight: "bold",
