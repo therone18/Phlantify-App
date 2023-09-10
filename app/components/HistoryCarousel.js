@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+
 import {
   View,
   Text,
@@ -7,22 +8,15 @@ import {
   ImageBackground,
   Dimensions,
   TouchableHighlight,
-  TouchableOpacity
+  TouchableOpacity,
 } from "react-native";
+
 import Carousel, { Pagination } from "react-native-snap-carousel";
-import { plants } from "../static/data";
+import { historyPlants } from "../static/data";
 import { resizeMode } from "deprecated-react-native-prop-types/DeprecatedImagePropType";
 import { LinearGradient } from "expo-linear-gradient";
-/*
-    TO DO:
-        - make the highlight for the panels only happen at single presses
-        - make the panels snap to the screen
-        - Automatically move the panels when not touched - /
-        
 
-*/
-
-export default function PlantCarousel() {
+export default function HistoryCarousel() {
   screenWidth = Math.round(Dimensions.get("window").width);
   const indexChecker = (index) => {
     if (index == 3) {
@@ -33,16 +27,20 @@ export default function PlantCarousel() {
   };
 
   state = {
-    plants,
+    historyPlants,
     activeSlide: 0,
   };
+
   _renderItem = ({ item }) => {
     const imagePaths = {
-      12: require("../media/12.jpg"),
-      19: require("../media/19.jpg"),
-      21: require("../media/21.jpg"),
-      26: require("../media/26.jpg"),
+      7: require("../media/7.jpg"),
+      32: require("../media/32.jpg"),
+      59: require("../media/59.jpg"),
+      65: require("../media/65.jpg"),
+      102: require("../media/102.jpg"),
+      201: require("../media/201.jpg"),
     };
+
     const imageSource = imagePaths[item.thumbnailImage];
 
     const handlePress = () => {
@@ -50,26 +48,24 @@ export default function PlantCarousel() {
     };
 
     return (
-      
-      <TouchableHighlight underlayColor="#F9EBC7"  onPress={handlePress} style={styles.backgroundImage}>
-      <ImageBackground
-        source={imageSource}
+      <TouchableHighlight
+        underlayColor="#F9EBC7"
+        onPress={handlePress}
         style={styles.backgroundImage}
       >
-        
-        <LinearGradient
-          colors={["#C4661FCC", "#00000000"]}
-          start={{ x: 0, y: 1 }}
-          end={{ x: 0, y: 0 }}
-          style={styles.gradient}
-        >
-          <View style={styles.plantDetails}>
-            
-            <Text style={styles.title}>{item.localName}</Text>
-            <Text style={styles.subtitle}>{item.scientificName}</Text>
-          </View>
-        </LinearGradient>
-      </ImageBackground>
+        <ImageBackground source={imageSource} style={styles.backgroundImage}>
+          <LinearGradient
+            colors={["#C4661FCC", "#00000000"]}
+            start={{ x: 0, y: 1 }}
+            end={{ x: 0, y: 0 }}
+            style={styles.gradient}
+          >
+            <View style={styles.plantDetails}>
+              <Text style={styles.title}>{item.localName}</Text>
+              <Text style={styles.subtitle}>{item.scientificName}</Text>
+            </View>
+          </LinearGradient>
+        </ImageBackground>
       </TouchableHighlight>
     );
   };
@@ -79,7 +75,7 @@ export default function PlantCarousel() {
       <Carousel
         layout="default"
         renderItem={this._renderItem}
-        data={this.state.plants}
+        data={this.state.historyPlants}
         sliderWidth={this.screenWidth}
         itemWidth={this.screenWidth}
         enableSnap={true}
@@ -104,7 +100,6 @@ const styles = StyleSheet.create({
 
   backgroundImage: {
     flex: 1,
-
   },
   gradient: {
     flex: 1,

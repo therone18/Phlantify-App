@@ -1,5 +1,6 @@
-import { View, Text, SafeAreaView, Button, StyleSheet } from "react-native";
+import { View, Text, SafeAreaView, Button, StyleSheet, ScrollView } from "react-native";
 import PlantCarousel from "../components/PlantCarousel";
+import HistoryCarousel from "../components/HistoryCarousel";
 import Header from "../components/Header";
 import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
 
@@ -18,22 +19,24 @@ import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropType
 const Homepage = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.main}>
+      <View></View>
       <Header />
-      <View>
+
+      <View style = {styles.containerPlants}>
         <Text style={styles.titletext}>Plants of the Day</Text>
+        <PlantCarousel />
       </View>
 
-      
-      <PlantCarousel />
-      
-        
       
 
       <View style={styles.containerHistory}>
-        <Text style={styles.centeredText}>Plant History Goes Here</Text>
+        <Text style={styles.titletext}>Your Recent Plant Scans</Text>
+        <HistoryCarousel/>
       </View>
 
-      <View style={styles.container} >
+      
+
+      <View style={styles.containerCamera} >
         <Text style={styles.centeredText}>
           Link to Camera Feature Goes here
         </Text>
@@ -47,7 +50,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     alignItmes: "center",
-    height: "100%",
     backgroundColor: "#F9EBC7",
   },
   centeredText: {
@@ -55,13 +57,25 @@ const styles = StyleSheet.create({
   },
   containerHistory: {
     flex: 1,
-    height: "100%",
+    height: "50%",
     
+
+  },
+  containerPlants: {
+    flex: 1,
+    height: "10%",
+
+  },
+  containerCamera: {
+    
+    height: "8%",
+    backgroundColor: "#C4661F",
+    marginTop: 15
 
   },
   titletext: {
     paddingHorizontal: 15,
-    paddingTop: 20,
+    paddingTop: 15,
     color: "#783D19",
     fontSize: 25,
     fontWeight: "600",

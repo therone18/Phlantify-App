@@ -35,3 +35,42 @@ export const plants = [
   },
   
 ];
+
+export const historyPlants = [
+  {
+    scientificName: "Chromolaena odorata (L.) R.M.King & H.Rob",
+    localName: "Siamweed/ Hagunoy",
+    partsUsed: "Leaves",
+    modePrep: "Crushed and drink the extracted juice ",
+    medUses: "Stomach ache",
+    thumbnailImage: "59"
+  },{
+    scientificName: "Asteraceae Artemisia vulgaris L",
+    localName: "Mugwort/Damong Maria",
+    partsUsed: "Leaves",
+    modePrep: "Crushed and drink the extracted juice ",
+    medUses: "Stomach ache",
+    thumbnailImage: "102"
+  },{
+    scientificName: "Alliaceae Allium odorum Ln",
+    localName: "Mango/Mangga",
+    partsUsed: "Leaves",
+    modePrep: "Crushed and drink the extracted juice ",
+    medUses: "Stomach ache",
+    thumbnailImage: "32"
+  },{
+    scientificName: "Asteraceae Artemisia vulgaris L",
+    localName: "Chinese chives/ Kutchai ",
+    partsUsed: "Leaves",
+    modePrep: "Crushed and drink the extracted juice ",
+    medUses: "Stomach ache",
+    thumbnailImage: "65"
+  },{
+    scientificName: "Chromolaena odorata (L.) R.M.King & H.Rob",
+    localName: "Siamweed/ Hagunoy",
+    partsUsed: "Leaves",
+    modePrep: "Crushed and drink the extracted juice ",
+    medUses: "Stomach ache",
+    thumbnailImage: "19"
+  },
+];
