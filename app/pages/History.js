@@ -1,6 +1,6 @@
 import { View, Text } from "react-native"
 
-const History = () => {
+const History = ({navigation}) => {
     return (
         <View>
             <Text>

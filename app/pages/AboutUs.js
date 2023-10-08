@@ -1,6 +1,6 @@
 import { View, Text } from "react-native"
 
-const AboutUs = () => {
+const AboutUs = ({navigation}) => {
     return (
         <View>
             <Text>

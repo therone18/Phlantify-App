@@ -1,6 +1,6 @@
 import { View, Text } from "react-native"
 
-const Encyclopedia = () => {
+const Encyclopedia = ({navigation}) => {
     return (
         <View>
             <Text>
