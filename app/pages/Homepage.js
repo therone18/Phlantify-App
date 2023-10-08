@@ -3,7 +3,7 @@ import PlantCarousel from "../components/PlantCarousel";
 import HistoryCarousel from "../components/HistoryCarousel";
 import Header from "../components/Header";
 import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
-
+import CameraScreenButton from "../components/CameraScanButton";
 //Homepage should show history of previously identified plants -
 //Homepage should show panels of plants and their descriptions - /
 //Homepage should have a button to direct to Camera feature activity -
@@ -17,6 +17,12 @@ import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropType
 */
 
 const Homepage = ({ navigation }) => {
+
+  const handleCameraButtonPressed = () => {
+    navigation.navigate('CameraPage')
+  }
+
+
   return (
     <SafeAreaView style={styles.main}>
       <View></View>
@@ -37,9 +43,7 @@ const Homepage = ({ navigation }) => {
       
 
       <View style={styles.containerCamera} >
-        <Text style={styles.centeredText}>
-          Link to Camera Feature Goes here
-        </Text>
+        <CameraScreenButton onPressCallback={handleCameraButtonPressed}/>
       </View>
     </SafeAreaView>
   );
@@ -68,8 +72,8 @@ const styles = StyleSheet.create({
   },
   containerCamera: {
     
-    height: "8%",
-    backgroundColor: "#C4661F",
+    height: "11%",
+    
     marginTop: 15
 
   },

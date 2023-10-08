@@ -44,7 +44,7 @@ export default function HistoryCarousel() {
     const imageSource = imagePaths[item.thumbnailImage];
 
     const handlePress = () => {
-      console.log(item);
+        console.log("History Carousel Item Pressed");
     };
 
     return (

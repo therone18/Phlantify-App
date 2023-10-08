@@ -46,7 +46,7 @@ export default function PlantCarousel() {
     const imageSource = imagePaths[item.thumbnailImage];
 
     const handlePress = () => {
-      console.log(item);
+      console.log("Plant Carousel Item Pressed");
     };
 
     return (
