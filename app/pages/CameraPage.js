@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import { useState, useEffect, useRef } from "react";
 import { Camera } from "expo-camera";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 const CameraPage = ({ navigation }) => {
   const [hasPermission, setHasPermission] = useState(null);
   const [cameraType, setCameraType] = useState(Camera.Constants.Type.back);
@@ -42,20 +42,30 @@ const CameraPage = ({ navigation }) => {
         onCameraReady={() => console.log("Camera is ready")}
         onMountError={(error) => console.error("Camera mount error", error)}
       >
+        <View style={{ alignItems: "flex-end", margin: 20 }}>
+          <TouchableOpacity activeOpacity={0.9} onPress={handleCameraSwitch}>
+            <MaterialCommunityIcons
+              name="camera-switch-outline"
+              size={50}
+              color="#C4661F"
+            />
+          </TouchableOpacity>
+        </View>
         <View
           style={{
             flex: 1,
-            backgroundColor: "transparent",
-            flexDirection: "row",
+            marginLeft: 36,
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
+          <Ionicons name="md-scan-outline" size={350} color="#C4661F99" />
           {/* Add UI components here, e.g., a switch button for camera */}
         </View>
-
-        <TouchableOpacity activeOpacity={0.9} onPress={handleCameraSwitch}>
+        <TouchableOpacity activeOpacity={0.9}>
           <View style={styles.container}>
             <Ionicons name="scan-circle" size={50} color="white" />
-            <Text style={styles.text}>Switch Camera</Text>
+            <Text style={styles.text}>Scan Plant</Text>
           </View>
         </TouchableOpacity>
       </Camera>
@@ -64,17 +74,19 @@ const CameraPage = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    width: "100%",
-    
+  swtichCam: {
     backgroundColor: "#C4661F",
-    justifyContent: "center",
-    alignItems: "center",
   },
   text: {
     fontSize: 16,
     color: "white",
     fontWeight: "bold",
+  },
+  container: {
+    width: "100%",
+    backgroundColor: "#C4661F",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 
