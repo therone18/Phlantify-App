@@ -27,6 +27,10 @@ const CameraPage = ({ navigation }) => {
     );
   };
 
+  const handleScan = () =>{
+    navigation.navigate('ImageScanning')
+  }
+
   if (!permission) {
     return <View />;
   }
@@ -62,7 +66,7 @@ const CameraPage = ({ navigation }) => {
           <Ionicons name="md-scan-outline" size={350} color="#C4661F99" />
           {/* Add UI components here, e.g., a switch button for camera */}
         </View>
-        <TouchableOpacity activeOpacity={0.9}>
+        <TouchableOpacity activeOpacity={0.9} onPress={handleScan}>
           <View style={styles.container}>
             <Ionicons name="scan-circle" size={50} color="white" />
             <Text style={styles.text}>Scan Plant</Text>
