@@ -10,7 +10,7 @@ import {
   TouchableOpacity
 } from "react-native";
 import Carousel, { Pagination } from "react-native-snap-carousel";
-import { plants } from "../static/data";
+import { plantsOfTheDay, plants } from "../static/data";
 import { resizeMode } from "deprecated-react-native-prop-types/DeprecatedImagePropType";
 import { LinearGradient } from "expo-linear-gradient";
 /*
@@ -33,7 +33,7 @@ export default function PlantCarousel() {
   };
 
   state = {
-    plants,
+    plantsOfTheDay,
     activeSlide: 0,
   };
   _renderItem = ({ item }) => {
@@ -79,7 +79,7 @@ export default function PlantCarousel() {
       <Carousel
         layout="default"
         renderItem={this._renderItem}
-        data={this.state.plants}
+        data={this.state.plantsOfTheDay}
         sliderWidth={this.screenWidth}
         itemWidth={this.screenWidth}
         enableSnap={true}
