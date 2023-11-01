@@ -13,6 +13,8 @@ import Carousel, { Pagination } from "react-native-snap-carousel";
 import { plants } from "../static/data";
 import { resizeMode } from "deprecated-react-native-prop-types/DeprecatedImagePropType";
 import { LinearGradient } from "expo-linear-gradient";
+
+import { plantData } from "../dbAPI/fetchAPI";
 /*
     TO DO:
         - make the highlight for the panels only happen at single presses
@@ -46,7 +48,10 @@ export default function PlantCarousel() {
     const imageSource = imagePaths[item.thumbnailImage];
 
     const handlePress = () => {
-      console.log("Plant Carousel Item Pressed");
+      
+      
+      console.log("Plant Carousel Item Pressed GODDAMIT");
+      console.log(plantData())
     };
 
     return (
