@@ -4,29 +4,29 @@ import HistoryCarousel from "../components/HistoryCarousel";
 import Header from "../components/Header";
 import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
 import CameraScreenButton from "../components/CameraScanButton";
+
 //Homepage should show history of previously identified plants -
 //Homepage should show panels of plants and their descriptions - /
 //Homepage should have a button to direct to Camera feature activity -
 //Homepage should have a button to direct to plant encyclopedia activity   -
 //Should Always show the header
 
-/*
-    TODO:
-        - Put "Plants of the day" on top of the Plant Carousel
-        - Set up Child - to - Parent data passing
-*/
 
 const Homepage = ({ navigation }) => {
 
-  const handleCameraButtonPressed = () => {
-    navigation.navigate('CameraPage')
+  const handleCameraButtonPressed = () => {                       
+    navigation.navigate('CameraPage')                 
+  }
+
+  const handleEncyclopediaButtonPressed = () => {
+    navigation.navigate('Encyclopedia')
   }
 
 
   return (
     <SafeAreaView style={styles.main}>
       <View></View>
-      <Header />
+      <Header onPressCallback={handleEncyclopediaButtonPressed} />
 
       <View style = {styles.containerPlants}>
         <Text style={styles.titletext}>Plants of the Day</Text>

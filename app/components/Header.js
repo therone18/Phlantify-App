@@ -1,11 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableHighlight, TouchableOpacity } from "react-native";
-import { Entypo, MaterialCommunityIcons } from "@expo/vector-icons";
+import { Entypo, MaterialCommunityIcons, FontAwesome5  } from "@expo/vector-icons";
 
-export default function Header() {
+export default function Header({onPressCallback}) {
   const handlePress = () => {
         
     console.log("pressed")
+    if (onPressCallback){
+      onPressCallback()
+    }
   };
   return (
     <View style={styles.container}>
@@ -16,8 +19,8 @@ export default function Header() {
 
         <View style={styles.topmenu}>
           <TouchableOpacity onPress={handlePress} >
-            <MaterialCommunityIcons
-              name="face-man-profile"
+            <FontAwesome5 
+              name="book"
               size={30}
               color="white"
               
