@@ -311,7 +311,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI02708.jpg")
+    "sourceImage": require("../media/PI02708.jpg"),
+    "plantGenInfo":"Sida acuta Burm is a genus that belongs to the Malvaceae family and is considered to be a weed found in open areas throughout the Philippines. This plant is considered to be a abortifacient, anthelmintic and antiemetic plant with demulcent and diuretic leaves. Decoction of roots, specifically the root juice, becomes a remedy for fevers, chronic bowel issues, ulers and some hemmorrhoids. It is widely used in African contries as remedies for kidney and liver disorders, and internal organs inflammatory swellings.",
+    "plantBotany":"Sihigon is an erect, branched slightly hairy and half-woody shrub that grows to a height of a meter or less. Its 3 to 5 centimeters long leaves have toothed marhins, a pointed tip and a rounded base. The yellow flowers are 1.3 centimeters in diameter while the fruit capsule is 3.5 millimeters long and consists of 4 to 9 carpels enclosed by the calyx."
   },
   {
     "plantID": "PI55576",
