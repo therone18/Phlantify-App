@@ -266,7 +266,9 @@ export const plants = [
       "Seeds"
     ],
     "plantPrep": "Decocted,  extracted  then  applied  directly  to  the affected area.",
-    "sourceImage": require("../media/PI13132.jpg")
+    "sourceImage": require("../media/PI13132.jpg"),
+    "plantGenInfo":"Persea americana Mill is a genus that is part of the Lauraceae family and is a extensively cultivated edible fruit in the Philippines. It is usually grown from seeds but it can also be propagated by budding or grafting. The fruit is usually eaten as it is or as a salad and it can sometimes be a delicious ice cream or dessert. This plant, specifically the fruit, is a great source of vitamins A, B, C, E and even iron. Aside from being a scrumptious delicacy, the pulp is known to prevent infection on shallow cuts, promote menstruation, or even to expel worms from the human body. It is not only a popular plant in the Philippines, but also to African and South American countries.",
+    "plantBotany":"Avocado is a medium-sized tree that reaches up to 15 meters. It has 20 centimeters long leathery, alternating, oblong or oval shaped leaves. The tree also has small and yellow flowers that can be seen along with its stamens that are in groups of 3 in 4 whorls. The fruit itself is a large, fleshy and elongated pear-like shape that is at most 18 centimeters long."
   },
   {
     "plantID": "PI54167",
