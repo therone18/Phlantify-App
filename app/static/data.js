@@ -63,7 +63,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Poultice, extracted and applied  directly to  the affected area, also prepped through decoction and then applied directly all over the body",
-    "sourceImage": require("../media/PI45706.jpg")
+    "sourceImage": require("../media/PI45706.jpg"),
+    "plantGenInfo":"Chromolaena odorata is a big busgt herb with long rambling byt not twinning branches. It grows on a wide range of soils and grows in a range of vegetation types like forests, grassland and arid bushvelds. It is a major weedin plantations and croplands. This plant is an ornamental plant that us sometmes used to heal rashes or skin issues.",
+    "plantBotany":"Hagunoy is an herbaceous perennial that forms dense tangled bushes with 1.5 to 2.0 meters in height. It occasionally reaches its maximum height of 6 meters. The stem of this plant branch freely with lateral branches developing in pairs from the axillary buds. The older stems are brown in color and are near the base while the young shoots are green and succelent. The root system is fibrous and does not penetrate beyond 20 to 30 centimeters in most soils. "
   },
   {
     "plantID": "PI20794",
