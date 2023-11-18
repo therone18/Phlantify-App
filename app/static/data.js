@@ -455,7 +455,9 @@ export const plants = [
       "Roots"
     ],
     "plantPrep": "Decoction, drunk and rubbed all over the body",
-    "sourceImage": require("../media/PI16137.jpg")
+    "sourceImage": require("../media/PI16137.jpg"),
+    "plantGenInfo":"The genus Paspalum has about 200 species widely distributed in the tropics and subtropics of both hemispheres. Many provide forage or pasture grass for cattle and horses. Grass is found in abundance in open waste places and settled areas, about towns, along trails, streams throughout the Philippines. The decoction of fresh roots are taken internally for diarrhea. The leaves are used for fever, debility, stomach troubles and pulmonary afflictions, and sometimes for headaches as well.",
+    "plantBotany":"Carabao grass  is a gregarious stoloniferous grass. Stems are spreading and branching below withe the flowering branches 20 to 70 centimeters high. Leaves are narrow lanceolate, flat and thin, glabrous, 8 to 20 centimeters long, 5 to 15 millimeters wide. Spikes are two, terminal, slender and 6 to 12 centimeters long. The spikelets are imbricate, 1.2 to 1.4 millimeters long, pale-green, plano-convex, the empty glumes with long, soft, white marginal hairs."
   },
   {
     "plantID": "PI66289",
