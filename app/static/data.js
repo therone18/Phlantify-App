@@ -162,7 +162,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Poulticed and applied directly on the affected area",
-    "sourceImage": require("../media/PI71753.jpg")
+    "sourceImage": require("../media/PI71753.jpg"),
+    "plantGenInfo":"Bryophyllum pinnatum is a genus of about 125 species of tropical and succelent plants that belong in the Crassulaceae family. Its leaves are used as astringent, antiseptic and counter-irritant agaisnt poisonous insect bites, sprains, infections, burns and even eczemas. In the Philippines, some tribes use the leaves of this plant as treatment for mumps and toothaches. There are also instances that it is used for asthma, ulcer stones, and other digestive problems in African and South American countries. This plant is also called a Miracle Plant for being a versatile plant in terms of during multiple internal and external diseases or sickness.",
+    "plantBotany":"Katakataka is a 0.4 to 1.4 meters erect, branched, smooth and succulent herb. Its leaves are simple or pinnately compound with elliptic leaflets that are abouth 10 centimeters long and it has thick, succulent and scalloped margins. The cylindric and pendulous flowers are in a terminal panicle. Its 3.5 to 4 centimeters long calyx is also cylindric and tubular with brown or purplish color. The fruit is a follicle with multiple seeds."
   },
   {
     "plantID": "PI14367",
