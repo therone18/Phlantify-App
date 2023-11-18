@@ -422,7 +422,9 @@ export const plants = [
       "Roots"
     ],
     "plantPrep": "Decoction, extracted then rubbed on the forehead.",
-    "sourceImage": require("../media/PI63910.jpg")
+    "sourceImage": require("../media/PI63910.jpg"),
+    "plantGenInfo":"Cymbopogon is a genus of about 55 species, indigenous in tropical and semi-tropical areas of Asia and cultivated in South and Central America. It is planted in most parts of the Philippines for its fragrant leaves, but is nowhere spontaneous.The oils are reddish-yellow with an intense odor and taste of lemons. It is commonly used as a stuffing ingredient in pig spit-roasting to improve the flavor and decrease the grease-taste. It is mostly used as a remedy for stomach related and digestive pain or diseases.",
+    "plantBotany":"Tanglad is a tufted and perennial grass. Leaves grow to a length of up to 1 meter, about 1 to 1.5 centimeters wide, scabrous, flat, long-acuminate, and smooth. Panicles are 30 to 80 centimeters long, interrupted below; the branches and branchlets somewhat nodding. Perfect spikelets are linear-lanceolate, pointed, not awned, and about 6 millimeters long."
   },
   {
     "plantID": "PI34558",
