@@ -216,7 +216,9 @@ export const plants = [
       "Fruits"
     ],
     "plantPrep": "Extracted, rubbed on the affected area and then pouticed.",
-    "sourceImage": require("../media/PI24886.jpg")
+    "sourceImage": require("../media/PI24886.jpg"),
+    "plantGenInfo":"Manihot esculenta is a genus of the Euphorbiaceae family and its leaves are used to cure or lessen measles, small pox, chicken pox and skin rashes. It is also a great sourve of tapioca and the tender leaves of this plant are used for wrapping vegetables or as ingredients in stews, which is a common thing to do in the Philippines and in some parts of Asia. Aside from being a remedy for multiple ailments, this plant is sometimes used as either flour for startch bath or the peelings' juice bath or babies.",
+    "plantBotany":"Casava or most locally known as kamote is an erect, smooth, half-woody 1.5 to 3 meters in height shrubby plant. Its smooth and alternating leaves are divided into three to seven narrow segments and are usually upto 20 centimeters long. The flowers on the other hand are about 1 centimeter long. This plant's capsule narrow-winged fruit is around 1.5 centimeters long."
   },
   {
     "plantID": "PI19034",
