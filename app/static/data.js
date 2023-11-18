@@ -198,7 +198,9 @@ export const plants = [
       "Roots"
     ],
     "plantPrep": "A decoction is drunk, also extracted and squeezed to the affected area",
-    "sourceImage": require("../media/PI33186.jpg")
+    "sourceImage": require("../media/PI33186.jpg"),
+    "plantGenInfo":"Euphorbia hirta is a genus of the Orchidaceae family and it is a widely distrubeted plant in the Philippines. The decoction of its leaves is usually used for fever, colds, cough and even flus. This plant is used as a remedy to expel worms and malignant tumors, or for treating sores and intestinal inflammation in Indonesia. Some districts in Siiwai and Buin also use the stems to assist mothers who aren't lactating.",
+    "plantBotany":"Tawa-tawa is an epiphytic orchid which has stout pseudobulbs that are 12 to 20n centimeters long. The leaves of this plant are about 20 to 40 centimeters long and are oblanceolate or oblong in shape. The peduncle's racemes are 0.6 to 1.5 meters long and its numerous flowers are about 5 to 8 centimeters long. The tawa-tawa's petals and sepals are obovate-oblong, yellowish-green in color and are covered with large reddish-brown blotches."
   },
   {
     "plantID": "PI24886",
