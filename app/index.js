@@ -12,7 +12,7 @@ import CameraPage from "./pages/CameraPage";
 import Encyclopedia from "./pages/Encyclopedia";
 import AboutUs from "./pages/AboutUs";
 import ImageScanningPage from './pages/ImageScanningPage';
-
+import PlantDetails from './pages/PlantDetails';
 import PlantCarousel from './components/PlantCarousel';
 
 /*
@@ -37,12 +37,8 @@ const Main = () =>{
                 <Stack.Screen name="AboutUs" component={AboutUs} options={{ headerShown: false }}/>
                 <Stack.Screen name="PlantCarousel" component={PlantCarousel} options={{ headerShown: false }}/>
                 <Stack.Screen name="ImageScanning" component={ImageScanningPage} options={{ headerShown: false }}/>
+                <Stack.Screen name="PlantDetails" component={PlantDetails} options={{ headerShown: false }}/>
             </Stack.Navigator>
-        //</NavigationContainer>
-        
-       //<SafeAreaView>
-        //<Text>TESTdadawcac</Text>
-       //</SafeAreaView>
     )
 }
 

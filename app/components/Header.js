@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableHighlight, TouchableOpacity } from "react-native";
-import { Entypo, MaterialCommunityIcons, FontAwesome5  } from "@expo/vector-icons";
+import { Entypo, MaterialCommunityIcons, FontAwesome5, MaterialIcons  } from "@expo/vector-icons";
+
 
 export default function Header({onPressCallback}) {
   const handlePress = () => {
