@@ -98,7 +98,9 @@ export const plants = [
       "Fruits"
     ],
     "plantPrep": "Extracted  and  applied  as  poultice  directly  to  the wound or affected area.",
-    "sourceImage": require("../media/PI61342.jpg")
+    "sourceImage": require("../media/PI61342.jpg"),
+    "plantGenInfo":"Impatens balsamina is from a genus of about 850 to 1000 species of flowering plants and it makes up the family of Balsaminaceae along with Hydrocera triflora. It has been used as a traditional medicine for centuries. It is considered emetic, cathartic, anti-infectious, diuretic, expectorant, and tonic. The alcoholic extract of its flowers possess antibiotic activities against some fungi and bacteria.",
+    "plantBotany":"Kamantingui is an annual, erect succulent and branched herb that grows about 1 meter high or less. Its leaves are smooth and somewhat glabrous or pubescent that has pointed ends. This plant's flowers are axillary and showy that grows 2 to 3 centimeters long snd has either white, red or purple in color. The fruits are loculicidal capsules, and pubescent explosive ones when ripe."
   },
   {
     "plantID": "PI91941",
