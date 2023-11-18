@@ -404,7 +404,9 @@ export const plants = [
       "Fruits"
     ],
     "plantPrep": "Decocted then used as cold or hot compress, is also poulticed then applied durectly on the affected area.",
-    "sourceImage": require("../media/PI17237.jpg")
+    "sourceImage": require("../media/PI17237.jpg"),
+    "plantGenInfo":"This phyllanthus acidus genus is a member of the Phyllanthaceae family and is a cultivated plant throughout the Philippines. This plant is considered antibacterial, astringent, antiscorbutic, febrifuge, antidiabetic, stomachic, refrigerant, while its fruit is considered astringent, refrigerant, and stomachic. This plant is a common remedy for skin diseases and inflammation of affected skin areas. For fevers, fruit made into syrup used as a cooling drink and the infusion of leaves also act as a protective tonic after childbirth.",
+    "plantBotany":"Kamias is a small tree, growing 5 to 12 meters high. Leaves are pinnate, 20 to 60 centimeters long, with hairy rachis and leaflets. Leaflets are opposite, 10 to 17 pairs, oblong, 5 to 10 centimeters in length. Panicles growing from the trunk and larger branches are hairy, 15 centimeters long or less. Flowers are about 1.5 centimeters long, and slightly fragrant. Fruit is green and edible, about 4 centimeters long, subcylindric, or with 5 obscure, broad, rounded, longitudinal lobes."
   },
   {
     "plantID": "PI63910",
