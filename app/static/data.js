@@ -281,7 +281,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI54167.jpg")
+    "sourceImage": require("../media/PI54167.jpg"),
+    "plantGenInfo":"Allium cepa L. is a genus belonging to the Liliaceae family that has a stimulant, rubefacient and diuretic bulb and oil. Aside from being a known food and condiment, its juice is known to be a remedy for illnesses or ailments like nose bleeds, dizziness, headaches, and asthma. It is usually mixed with other ingredients to form a certain drinkable or rubbable output.",
+    "plantBotany":"Sibuyas dahon is a cylindric, hollow, 8 millimeters herb with leaves shorter than the scape. Its scape is a 30 centimeters high and 1 centimeter thick in the middle, narrowed and inflated part. The flowers of this plant are stellate, numerous and rounded umbel with 5 to 7 millimeters long pedicels."
   },
   {
     "plantID": "PI08810",
