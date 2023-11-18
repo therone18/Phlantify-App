@@ -19,6 +19,7 @@ const Encyclopedia = ({ navigation }) => {
 
   const handlePress = (plantID) => {
     console.log(plantID);
+    navigation.navigate('PlantDetails', {plantID: plantID})
   };
 
   function sortArrayByKey(array, key) {
