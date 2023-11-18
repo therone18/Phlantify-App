@@ -29,7 +29,7 @@ export const plants = [
     ],
     "plantPrep": "Decoction",
     "sourceImage": require("../media/PI33356.jpg"),
-    "plantGenInfo":"Mangoes are part of the Mangifera genus which consists of about 30 species of tropical fruiting trees. It ia an important herb in indigenous medical systems for over 4000 years. Mango is the national fruit of India, Pakistan, adn the Philippines. It is also considered as the national tree of Bangladesh. Mangoes are good sources of iron, vitamins A, B and C, and it contains critic, tartaric and mallic acids.",
+    "plantGenInfo":"Anacardiaceae Magniferas are part of the Mangifera genus which consists of about 30 species of tropical fruiting trees. It ia an important herb in indigenous medical systems for over 4000 years. Mango is the national fruit of India, Pakistan, adn the Philippines. It is also considered as the national tree of Bangladesh. Mangoes are good sources of iron, vitamins A, B and C, and it contains critic, tartaric and mallic acids.",
     "plantBotany": "Mango tree is a large tree with dense and spreading crown. Its leaves are oblong or oblong-lanceolate that are 10 to 30 centimeters long. The mango's flowers are yeallow and small that are usually 3 to 4 millimeters long. The fruit of a Mango is a fleshy, drupe, oblong-ovoid and is usually a varying shade of yellow that's 10 to 15 centimeters long. Inside the fruit, is a large, flattened, fibrous seed in the center and is an edible yellow pulp when the mango is ripe."
   },
   {
@@ -46,7 +46,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Extraction, infused and then rubbed all over the body",
-    "sourceImage": require("../media/PI13236.jpg")
+    "sourceImage": require("../media/PI13236.jpg"),
+    "plantGenInfo":"Artemisia vulgaris are part of a large diverse genus of plants that comprises of around 400 species. It is the largest genus of the Asteraceae family. The plant's young and tender leaves are commonly used as pot herb. However some use the shoots and leaves of the plant as condiment for a variety of meat dishes that are famous in Korean and Japanese cuisines. The plant's leaves are commmonly used to wrap glutinous rice dumplings in China.",
+    "plantBotany":"Damong maria is an erect, perenniel herb that is hairy, aromatic and often half-wood that grows upto 1 meter or less. The stems have branches with pinnately lobed, hiart and nearly smoooth leaves that grow from 5 to 14 centimeters long. The flowering heads of this plant are 3 to 4 millimeters long that are numerous, spikelike, and branched inflorescences. It usually has a minute fruit that only rarely shows."
   },
   {
     "plantID": "PI45706",
