@@ -113,7 +113,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decocted and is drunk 2 glasses a day",
-    "sourceImage": require("../media/PI91941.jpg")
+    "sourceImage": require("../media/PI91941.jpg"),
+    "plantGenInfo":"Carmona retusa masam is a genus that is part of the Boraginaceae family that has about roughly 50 species. This plant is a leaf decoction or inusion that is used for abdominal colic, cough and diarrhea in the Philippines. Its other uses in different countries linke Sri Lanka, Vietnam and India, are to treat diabetes, back pain, and snake bite wounds. There are multiple studies that dive into the antibacterial and ant-inflammatory uses of the plant.",
+    "plantBotany":"Tsaang gubat is an erect, and branched shrub that grows up to 1 to 4 meters high. Its leaves are in clusters on short branches, obovate in shape that grow up to 6 centimeters and are also somewhat toothed near the apex that is pointed at the base of the plant. The flowers are white, small, axillary, solitary and usually shorter that the leaves. The calyx lobes of the plants are green, hairt and linear that are 5 to 6 millimeters long. The tsaang gubat's fruit isna drupe, rounded and yellow 4 to 5 millimeters in diameter with a fleshy outer part and stony inner part."
   },
   {
     "plantID": "PI73313",
