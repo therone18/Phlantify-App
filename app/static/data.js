@@ -516,7 +516,9 @@ export const plants = [
       "Flower"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI85619.jpg")
+    "sourceImage": require("../media/PI85619.jpg"),
+    "plantGenInfo":"Bauhinia tomentosa Linn was introduced from tropical Asia and is cultivated in Manila and other towns. Its leaves smell like burned rubber when rubbed, probably giving the plant its local name of 'baho-baho.' The decoction of root bark use as vermifuge; infusion of stem bark used as astringent gargle while the bruised bark is applied externally to wounds and tumors and the seeds are used as tonic and aphrodisiac.",
+    "plantBotany":"Baho-baho is an erect, branched shrub attaining a height of 2 to 4 meters. Branchlets, lower surfaces of the leaves and pods are somewhat hairy. Leaves are 4 to 7 centimeters long, about as wide, and split about one-third to the base into two, with oval, rounded lobes. Flowers are pale lemon-yellow, usually in pairs, on axillary peduncles. Pods are 9 to 11 centimeters long, about 1.5 centimeters wide, flattened and containing 6 to 10 small seeds."
   },
   {
     "plantID": "PI60797",
