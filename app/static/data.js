@@ -296,7 +296,9 @@ export const plants = [
       "Seeds"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI08810.jpg")
+    "sourceImage": require("../media/PI08810.jpg"),
+    "plantGenInfo":"Abelmoschus esculentus is a flowering plant in the mallow family that originated somewhere around Ethiopia. This aromatic, and clove-like odor plant is considered to be very mucilaginous when cooked. It's an edible fruit that is considered to be a fair source of iron, calcium and Vitamins A and C. When the roots and leaves of this plant undergoes a decoction process, it can be useful to treating urinary problems, headaches, fevers and abdominal pains. Not only that but the poultice of the roots can be used for wound healing, syphilis or gonorrhea. For some countries in Europe, they use this plant as a way to reduce inflammation on the skin or for stomach aches.",
+    "plantBotany":"Okra is a coarse, erect, branched and hairy herb that is at most 1.5 meters high. Its 25 centimeters long leaves are long-petioled, and orbicular-ovate. The petioles of this plant are equal to the blade in length or longer. The large corolla is yellow on the outsie but have a deep purple base inside while its 10 to 25 centimeters fruit has kidney shaped seeds."
   },
   {
     "plantID": "PI02708",
