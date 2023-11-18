@@ -181,8 +181,8 @@ export const plants = [
     ],
     "plantPrep": "Extraction, applied directly to the affected area, also poulticed immediately to the affected area",
     "sourceImage": require("../media/PI14367.jpg"),
-    "plantGenInfo":"Croton tiglium is a genus of the Euphorbiaceae family and is an active principles, glucoside and a resin. It is commonly used for treatment for ulcers, or swollen wounds from venomous animal bites.",
-    "plantBotany":""
+    "plantGenInfo":"Croton tiglium is a genus of the Euphorbiaceae family and is an active principles, glucoside and a resin. It is commonly used for treatment for ulcers, or swollen wounds from venomous animal bites. Aside from ailing multiple wounds and inflammations, this plant also used as an illuminant in some parts of Africa since its seeds contain 36 percent of oil. Though this plant contins red physic nuts that might contain toxins in the seeds and other tissues, numerous studies have proven that extracts of the leaves are wound healing and anti-immflamatory.",
+    "plantBotany":"Tuba-tuba is an erect, branched shrub that is usually not more than a meter high. Its leaf margins, petioles, and inflorescences are covered with capitate-glandular hairs. The plant's smooth and shiny 3 or 5 lobed leaves are 7 to 12 centimeters long. The small and cyme-borne flowers are usually purple in color, while the 3 lobed capsules are 1 centimeter long."
   },
   {
     "plantID": "PI33186",
