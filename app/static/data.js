@@ -372,7 +372,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI15877.jpg")
+    "sourceImage": require("../media/PI15877.jpg"),
+    "plantGenInfo":"Psidium is a genus of trees and shrubs in the family Myrtaceae, It is native to warmer parts of the Western Hemisphere. Its bark and leaves are astringent and vulnerary. In the Philippines, the astringent, unripe fruit, the leaves, bark cortex, and roots are used in decoction for washing ulcers and wounds. Chewed or macerated leaves applied to circumcision wound for prevention or cure of infection while fresh leaves used for wounds and toothache.",
+    "plantBotany":"Bayabas is a somewhat hairy plant reaching a height of 8 meters. Young branches are 4 angled. Leaves are opposite, oblong to elliptic, and 5 to 1 centimeters long, the apex being pointed, and the base usually rounded. Peduncles are 1 to 3 flowered. Flowers are white, 3 to 3.5 centimeters across, with in-curved petals, coming out solitary or two to three in the leaf axils. Numerous stamens form the attractive part of the flower. Inferior ovaries develop into round or obovoid green fruits 4 to 9 centimeters long, turning yellow on ripening and have edible, aromatic, seedy pulp."
   },
   {
     "plantID": "PI76099",
