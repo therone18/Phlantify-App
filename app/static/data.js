@@ -485,7 +485,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI40265.jpg")
+    "sourceImage": require("../media/PI40265.jpg"),
+    "plantGenInfo":"The chrysophyllum cainito plant is cultivated for its edible fruit and ornamental tree, and its seed is tonic, diuretic and febrifuge. Multiple studies have suggested that this plant contains antioxidant, antidiabetic, antimicrobial, anti-inflammatory, hypotensive, vasorelaxant , analgesic, anti-osteoporosis, antidiabetic, antiprotein glycation, anti-aging, immunosuppressive, anticancer properties. The decoction of leaves is used to cure hypertension, diabetes, diarrhea and fevers and can be hot or cold compress for postpartum needs.",
+    "plantBotany":"Caimito is a tree with a spreading crown, growing to a height of 15 meters. Branches are numerous and slender, the young tips are copper-colored and covered with appressed hairs. Leaves are leathery, ovate or oblong, 7.5 to 13 centimeters long, pointed at the tip, blunt or rounded at the base and covered underneath with silky, golden-brown, soft hairs. Flowers are purplish-white, small and clustered in the axils of leaves, with 5 sepals, and a tubular corolla with 5 lobes. Fruit is large and rounded, 6 to 10 centimeters in diameter, shiny and smooth, purplish or light-green skin, with a translucent whitish or purplish, soft pulp surrounding flattened seeds about 1 to 1.5 centimeters long. The flesh, contains a small amount of milky juice, somewhat fibrous, sweet, mild and pleasant tasting."
   },
   {
     "plantID": "PI26012",
