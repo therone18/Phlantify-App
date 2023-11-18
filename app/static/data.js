@@ -500,7 +500,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Extracted then applied directly all over the body.",
-    "sourceImage": require("../media/PI26012.jpg")
+    "sourceImage": require("../media/PI26012.jpg"),
+    "plantGenInfo":"The 2014 global production of C. annuum was approximately 409,000 tons. Vietnam topped the list with a yield of 155,000 tons, about 35% of global production. The global trade for chili accounts for 16% of the world's total spice trade. It is found throughout the Philippines, planted there and there about dwellings, but also thoroughly established in open, waste places in settled areas. Its fruit contains the active principles: capsaicin, 0.14% and capsicin that can be a remedy for tooth related pain or aches. Ot is even sometimes used as treatment for coughs, sore throat and rheumatic pains.",
+    "plantBotany":"Siling-labuyo is an erect, branched and half-woody plant, growing to a height of 0.8 to 1.5 meters. Leaves are oblong-ovate to ovate-lanceolate, 3 to 10 centimeters long, and pointed at the tip. Flowers are solitary or several in each axil, stalked, pale green or yellowish-green, and 8 to 9 millimeters in diameter. Fruit is commonly red when ripe, oblong-lanceolate, 1.5 to 2.5 centimeters long. Seeds are numerous and discoid."
   },
   {
     "plantID": "PI85619",
