@@ -387,7 +387,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decocted, used to cool down, also used as cold compress",
-    "sourceImage": require("../media/PI76099.jpg")
+    "sourceImage": require("../media/PI76099.jpg"),
+    "plantGenInfo":"Averrhoa carambola Linn is a genus belonging to the Oxalidaceae family that have  laxative, refrigerant, antiscorbutic, appetite stimulant, febrifuge, antidysenteric, sialagogue, and antiphlogistic properties. The edible fruit is a source of iron (low in calcium) and vitamins B and C, oxalate and potassium. The decoction of leaves and fruit used to arrest vomiting and used as external applicators on foreheads for fevers. Since the fruit is laxative; also used for hematemesis, melena and other forms of hemorrhages.",
+    "plantBotany":"Balimbing is a small tree growing to a height of 6 meters or less. Leaves are pinnate, about 15 centimeters long. Leaflets are smooth, usually in 5 pairs, ovate to ovate-lanceolate, the upper ones about 5 centimeters long and the lower ones smaller. Panicles are small, axillary and bell-shaped, 5 to 6 millimeters long. Calyx is reddish purple. Petals are purple to bright purple, often margined with white. Fruit is fleshy, green to greenish yellow, about 6 centimeters long, with 5 longitudinal, sharp and angular lobes while its seeds are arillate."
   },
   {
     "plantID": "PI17237",
