@@ -470,7 +470,9 @@ export const plants = [
       "Fruits"
     ],
     "plantPrep": "Extraction",
-    "sourceImage": require("../media/PI66289.jpg")
+    "sourceImage": require("../media/PI66289.jpg"),
+    "plantGenInfo":" Calamondin is a cultivar related to Citrus, a citrofortunella, a hybrid between Citrus reticulate Blanco and Fortunella spp. It has aromatic, antiseptic, antiphlogistic, carminative, deodorant, refrigerant properties that make it a perfect remedy for illnesses like sore throat, cough, colds and it even can be an antidote for poison. This sour and popular seasoning is a rich source of vitamin C.",
+    "plantBotany":"Kalamansi is a smooth and slightly spiny plant, growing to a height of 3 to 5 meters. Leaflets are elliptic to oblong-elliptic, 4 to 8 centimeters long. Petioles are very narrowly or scarcely winged, about 1 centimeter long. Flowers are axillary, solitary, rarely in pairs, white, and short-stalked. Fruit is yellow when ripe, nearly spherical, 2 to 3.5 centimeters diameter, 6 to 7 celled, and thin-skinned. The skin or peel is green to yellowish green or yellow, loosely adhering to the flesh. The flesh contains a few light orange seeds."
   },
   {
     "plantID": "PI40265",
