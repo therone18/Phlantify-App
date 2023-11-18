@@ -145,7 +145,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decocted and used as bath in the morning.",
-    "sourceImage": require("../media/PI00074.jpg")
+    "sourceImage": require("../media/PI00074.jpg"),
+    "plantGenInfo":"Tamarindus indica is a genus of the Caesalpiniaceae family and it is a source of vitamins B and C. This plant has astringent, tonic, digestive, anthiasthamtic, febrifuge, carminative, antiscorbutic and antibilious properties. The bark, seed and testa of this plant are consedered tonic and anstringent which helps reduce redness and inflammation of the skin. In the Philippines, this plant is a remedy used a lotion or poultice to apply on rashes, boils and swellings on human skin.",
+    "plantBotany":"Sampalok is a large tree that is 12 to 25 meters high with 6 to 10 centimeters long pinate leaves with 20 to 40 close, oblong and obtuse leaflets. The calyx is about 1 centimeter long with a turbinate tube, lanceolate teeth and imbricated lower connate. This plant's obovate-oblong petals are yellowish with pink stripes and is 1 centimeter long. The oblong thickened fruit pods are 6 to 15 centimeters long and 2 to 3 centimeters wide."
   },
   {
     "plantID": "PI71753",
