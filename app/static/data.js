@@ -231,7 +231,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Poulticed and rubbed all over the body",
-    "sourceImage": require("../media/PI19034.jpg")
+    "sourceImage": require("../media/PI19034.jpg"),
+    "plantGenInfo":"to be followed",
+    "plantBotany":"to be followed"
   },
   {
     "plantID": "PI25148",
