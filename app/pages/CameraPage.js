@@ -17,7 +17,13 @@ const CameraPage = ({ navigation }) => {
     // Request camera permission
   }, []);
 
-  const [permission, requestPermission] = Camera.useCameraPermissions();
+  const [permission, requestPermission] = useState();
+  useEffect (()=>{
+    (async () => {
+      const cameraPermission = await Camera.requestCameraPermissionsAsync()
+      requestPermission(cameraPermission.status === "granted")
+    })();
+  }, [])
 
   const handleCameraSwitch = () => {
     setCameraType(
@@ -31,11 +37,10 @@ const CameraPage = ({ navigation }) => {
     navigation.navigate('ImageScanning')
   }
 
-  if (!permission) {
-    return <View />;
-  }
-  if (!permission.granted) {
-    return <Text>No access to camera</Text>;
+  if (permission === undefined) {
+    return <Text>Requesting Permissions</Text>;
+  } else if (!permission){
+    return <Text>Camera Permission Denied</Text>
   }
 
   return (
