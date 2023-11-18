@@ -180,7 +180,9 @@ export const plants = [
       "Leaves, Stem Bark"
     ],
     "plantPrep": "Extraction, applied directly to the affected area, also poulticed immediately to the affected area",
-    "sourceImage": require("../media/PI14367.jpg")
+    "sourceImage": require("../media/PI14367.jpg"),
+    "plantGenInfo":"Croton tiglium is a genus of the Euphorbiaceae family and is an active principles, glucoside and a resin. It is commonly used for treatment for ulcers, or swollen wounds from venomous animal bites.",
+    "plantBotany":""
   },
   {
     "plantID": "PI33186",
