@@ -130,7 +130,9 @@ export const plants = [
       "Stem"
     ],
     "plantPrep": "Poultice, applied directly on the affected area.",
-    "sourceImage": require("../media/PI73313.jpg")
+    "sourceImage": require("../media/PI73313.jpg"),
+    "plantGenInfo":"Opuntia cochenillifera is a species of cactus in the subfamily Optuntioideae. It is considered to be anti-inflammatory, analgesic and stomach-protective. Both the fruit and pads are edible after removing the spines and hairy prickels that penetrate through its skin. This plant has multiple uses in curing inflammation and pain related diseases. It is also sometimes added to salads, or can be eaten raw.",
+    "plantBotany":"Palad-palad is a cactaceous, fleshy and erect leafless plant that grows up to 3 meters high. The stems are stout, with thick joints, oblong-ovate, and green in color that grows around 15 to 25 centimeters long. It also has small, scattered, white cusion-like bodies which bear small spines. The calyx is a green, fleshy oblong-ovoid that is 3 to 8.5 centimeters long. Its red corolla is 2.5 centimeters long and its ovoid, fleshy and purplish fruit is about 3.5 centimeters long."
   },
   {
     "plantID": "PI00074",
