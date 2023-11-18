@@ -81,7 +81,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decoction,  extracted  and  applied  directly  to  the affected area",
-    "sourceImage": require("../media/PI20794.jpg")
+    "sourceImage": require("../media/PI20794.jpg"),
+    "plantGenInfo":"Pseudelephantopus spicatus rohr is usually found in Central Luzon, and the leaves are used as remedies for eczema. This plant's bark are also used as antidotes for snake bites and sometimes used for eye problems, sprains and even fevers.",
+    "plantBotany":"Dilang-aso is an erect, branched, hairy and smooth herb that grows around 20 to 80 centimeters in height. Its leaves are oblong-obovate that are 9 to 14 centimetes long with a bluent tip and narrow base. The plant's flowering heads are about 1.5 centimeters long and it has elongated spike-like branches of the inlorescence. The involucral bracts are green with the outer being much smaller than the inner ones. The pappus hairs on the plant are dilated, laciniate-clefted at the base and unequal."
   },
   {
     "plantID": "PI61342",
