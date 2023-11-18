@@ -28,7 +28,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI33356.jpg")
+    "sourceImage": require("../media/PI33356.jpg"),
+    "plantGenInfo":"Mangoes are part of the Mangifera genus which consists of about 30 species of tropical fruiting trees. It ia an important herb in indigenous medical systems for over 4000 years. Mango is the national fruit of India, Pakistan, adn the Philippines. It is also considered as the national tree of Bangladesh. Mangoes are good sources of iron, vitamins A, B and C, and it contains critic, tartaric and mallic acids.",
+    "plantBotany": "Mango tree is a large tree with dense and spreading crown. Its leaves are oblong or oblong-lanceolate that are 10 to 30 centimeters long. The mango's flowers are yeallow and small that are usually 3 to 4 millimeters long. The fruit of a Mango is a fleshy, drupe, oblong-ovoid and is usually a varying shade of yellow that's 10 to 15 centimeters long. Inside the fruit, is a large, flattened, fibrous seed in the center and is an edible yellow pulp when the mango is ripe."
   },
   {
     "plantID": "PI13236",
