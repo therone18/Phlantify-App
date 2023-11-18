@@ -356,7 +356,9 @@ export const plants = [
       "Matured Fruits"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI22294.jpg")
+    "sourceImage": require("../media/PI22294.jpg"),
+    "plantGenInfo":"Musa x paradisiaca is grown in about 130 countries  worldwide with more than 100 million tons of banana and platains. Its fruit is a good source of vitamin A, B and C. It also has attributed biological activities like  antiulcerogenic, antidiabetic, antiatherogenic, antidiarrheic, antitumoral, antimutagenic, antihypertensive. Its young leaves are used for cool dressing of inflamed and blistered surfaces on skin or as cool application for headaches. Mucilage prepared from seeds used for catarrhal and mild inflammatory forms of diarrhea. Juice of tender roots used as mucilage for checking hemorrhages from the genitalia and air passages.",
+    "plantBotany":"The banana plant is the largest herbaceous flowering plant. The main or upright stem is actually a pseudostem, growing from a corm, to a height of 6 to 7.6 meters. Leaves are spirally arranged, as long as 2.7 meters and 60 centimeters wide, fragile and easily torn by wind, with the familiar frond look. Each pseudostem produces a single bunch of bananas; the pseudostem dies after fruiting, as offshoots usually develop from the base of the plant. Each pseudostem produces a single inflorescence, the banana heart, containing many bracts between rows of flowers."
   },
   {
     "plantID": "PI15877",
