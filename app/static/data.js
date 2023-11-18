@@ -14,8 +14,8 @@ export const plants = [
     ],
     "plantPrep": "Crushed and the extracted juice is drunk",
     "sourceImage": require("../media/PI76879.jpg"),
-    "plantGenInfo": "sample sample",
-    "plantBotany": "sample sample"
+    "plantGenInfo": "Allium odorum (Chinese chives) is a northern Asian species of wild onion. It is an excellent source of calcium, phosphorus and iron. The Kutchai's bulbs are considered antiseptic and vulnerable. It is usually used like an onion or flavoring spice for food. The leaves of the plant are usually used and cooked with Chinese dishes especially with liver.",
+    "plantBotany": "Kutchai is a kind of ranked-scented, and green leek that grows from 20 to 40 centimeters high. The plants has small, white and clustered bulbs with green grass-like, narrowly flat leaves that grow around 15 to 30 centimeters long. Its perinth is bell-shaped and the fruits are on pedicels of 2 to 3 centimeters long, 3-lobed obovoid and 5 to 7 centimeters in diameter. The seeds of these plants are black and globose that is 2.5 to 3 milimeters in diameter."
   },
   {
     "plantID": "PI33356",
