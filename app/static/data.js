@@ -437,7 +437,9 @@ export const plants = [
       "Roots"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI34558.jpg")
+    "sourceImage": require("../media/PI34558.jpg"),
+    "plantGenInfo":"To be followed",
+    "plantBotany":"To be followed"
   },
   {
     "plantID": "PI16137",
