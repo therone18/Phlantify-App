@@ -341,7 +341,9 @@ export const plants = [
       "Stem"
     ],
     "plantPrep": "Decoction",
-    "sourceImage": require("../media/PI13390.jpg")
+    "sourceImage": require("../media/PI13390.jpg"),
+    "plantGenInfo":"This Tinospora crispa (L.) Hook.f. & Thomson genus is a member of the Manispermaceae family and is usually found in nearby towns in most islands of the Philippines.  Decoction of leaves and stems used for malaria and fever and as a tonic. This plant, once it has undergone a decoction process, it can be a remedy for  ulcers, skin itches or wounds, and even athlete's foot. There are new studies that proves this plant as a possible anecdotal stimulant for a variety of HIV-related complaints.",
+    "plantBotany":"Makabuhay is a climbing, dioecious vine reaching a height of 4 to 10 meters. Stems are up to 1 centimeter thick and somewhat fleshy, with scattered protuberances. Leaves are thin, ovate, 6 to 12 centimeters long, and 7 to 12 centimeters wide, with pointed and truncate or somewhat heart-shaped based, smooth and shining. Petioles are 3.5 to 6 centimeters long. Racemes are solitary or in pairs arising from axils of fallen leaves, pale green, slender, 10 to 20 centimeters long. Flowers are pale green and short pedicelled. Fruit is 8 millimeters long, in long clusters."
   },
   {
     "plantID": "PI22294",
