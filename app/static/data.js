@@ -13,7 +13,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Crushed and the extracted juice is drunk",
-    "sourceImage": require("../media/PI76879.jpg")
+    "sourceImage": require("../media/PI76879.jpg"),
+    "plantGenInfo": "sample sample",
+    "plantBotany": "sample sample"
   },
   {
     "plantID": "PI33356",
