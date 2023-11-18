@@ -14,6 +14,8 @@ import AboutUs from "./pages/AboutUs";
 import ImageScanningPage from './pages/ImageScanningPage';
 import PlantDetails from './pages/PlantDetails';
 import PlantCarousel from './components/PlantCarousel';
+import DeniedPermsPage from './pages/DeniedPermsPage';
+import CameraLoadingPage from './pages/CameraLoadingPage';
 
 /*
     TODO:
@@ -38,6 +40,8 @@ const Main = () =>{
                 <Stack.Screen name="PlantCarousel" component={PlantCarousel} options={{ headerShown: false }}/>
                 <Stack.Screen name="ImageScanning" component={ImageScanningPage} options={{ headerShown: false }}/>
                 <Stack.Screen name="PlantDetails" component={PlantDetails} options={{ headerShown: false }}/>
+                <Stack.Screen name="DeniedPermsPage" component={DeniedPermsPage} options={{ headerShown: false }}/>
+                <Stack.Screen name="CameraLoadingPage" component={CameraLoadingPage} options={{ headerShown: false }}/>
             </Stack.Navigator>
     )
 }
