@@ -326,7 +326,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Decocted and then used as a bath",
-    "sourceImage": require("../media/PI55576.jpg")
+    "sourceImage": require("../media/PI55576.jpg"),
+    "plantGenInfo":"There are two different species of the santol fruit since there are two varieties, namely the yellow or the red variety. The difference between these two varieties is the color that older leaves turn to before falling. The roots of such plant has an aromatic, carminative, antispasmodic, astringent and stomachic properties that can be remedies for skin related infections, rashes or diarrhea. This is not only used in the Philippines but also in other southeast Asian countries like Malaysia and Indonesia. The fruit of this plant is eaten usually raw since it's a high in carbohydrates, contains iron and vitamin B. It is commonly used in Filpino or Thai cuisines in making soup, sinigang and som tam respectively.",
+    "plantBotany":"Santol is at most a 20 meters high tree with softly hairy branches and leaves. Its leaves are groups  of 3 leaflets, elliptic to oblong-ovate, 10 to 25 centimeter long, with pointed tips and round bases. Flowers are numerous, somewhat fascicled, about 1 centimeter long, in greenish or yellowish clusters. Fruits are rounded and somewhat flattened, 4 to 6 centimeters, yellowish-orange when ripe with a thick pericarp. Seeds are large, surrounded by a translucent or pale, sweet tasting edible pulp."
   },
   {
     "plantID": "PI13390",
