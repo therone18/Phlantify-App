@@ -249,7 +249,9 @@ export const plants = [
       "Leaves"
     ],
     "plantPrep": "Extraction, Poultice",
-    "sourceImage": require("../media/PI25148.jpg")
+    "sourceImage": require("../media/PI25148.jpg"),
+    "plantGenInfo":"This Plectranthus genus is part of the 173 varieties of P. scuttellariodes and is considered as an ornamental cultivation for having decorative leaves. These leaves are pounded and used as a cure for headaches, for healing bruises or bleeding wounds and sometimes as eye drops if it undergoes the decoction process. Not only that but this plant are anti-oxidants which can be a remedy for digestive problems and even to help with menstruation regulation. It is mostly used in South East Asian countries like the Philippines, especially the tribes in Luzon.",
+    "plantBotany":"Mayana is an erect, branched, fleshy, and a 1 meter high herb that has a 4-angled purplish stem. Its 5 to 10 centimeters long leaves are sometimes blotched but mostly colored, more or less hairy, coarsely toothed in the margins and usually has a velvety-purple color. The numerous and borne in lax flowers of a Mayana are purplish in color and are about 15 to 30 centimeters long. Its green calyx are 2.5 millimeters long, while the corolla is 11 millimeters long."
   },
   {
     "plantID": "PI13132",
