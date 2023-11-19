@@ -1,31 +1,37 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableHighlight, TouchableOpacity } from "react-native";
-import { Entypo, MaterialCommunityIcons, FontAwesome5, MaterialIcons  } from "@expo/vector-icons";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableHighlight,
+  TouchableOpacity,
+} from "react-native";
+import {
+  Entypo,
+  MaterialCommunityIcons,
+  FontAwesome5,
+  MaterialIcons,
+} from "@expo/vector-icons";
 
-
-export default function Header({onPressCallback}) {
+export default function Header({ onPressCallback }) {
   const handlePress = () => {
-        
-    console.log("pressed")
-    if (onPressCallback){
-      onPressCallback()
+    console.log("pressed");
+    if (onPressCallback) {
+      onPressCallback();
     }
   };
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.logo}>
-          <Entypo name="leaf" size={30} color="white" />
+          <TouchableOpacity onPress={handlePress}>
+            <Entypo name="leaf" size={30} color="white" />
+          </TouchableOpacity>
         </View>
 
         <View style={styles.topmenu}>
-          <TouchableOpacity onPress={handlePress} >
-            <FontAwesome5 
-              name="book"
-              size={30}
-              color="white"
-              
-            />
+          <TouchableOpacity onPress={handlePress}>
+            <FontAwesome5 name="book" size={30} color="white" />
           </TouchableOpacity>
         </View>
       </View>
@@ -64,6 +70,5 @@ const styles = StyleSheet.create({
   topmenu: {
     flex: 1,
     alignItems: "flex-end",
-    
   },
 });

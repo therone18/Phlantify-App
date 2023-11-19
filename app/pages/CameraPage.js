@@ -4,20 +4,23 @@ import {
   StyleSheet,
   TouchableHighlight,
   TouchableOpacity,
-  Button
+  Button,
+  Dimensions
 } from "react-native";
 import { useState, useEffect, useRef } from "react";
 import { Camera } from "expo-camera";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "../components/Header";
+const screenHeight = Dimensions.get("window").height;
+console.log(screenHeight)
 const CameraPage = ({ navigation }) => {
   const [hasPermission, setHasPermission] = useState(null);
   const [cameraType, setCameraType] = useState(Camera.Constants.Type.back);
   const [cameraRef, setCameraRef] = useState(null);
   const [capturedImage, setCapturedImage] = useState(null);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const handleEncyclopediaButtonPressed = () => {
+  const handleEncyclopediaButtonPressed = () => { 
     navigation.navigate("Encyclopedia");
   };
   useEffect(() => {
