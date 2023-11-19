@@ -26,6 +26,10 @@ const ScanningStartPage = ({ navigation }) => {
     navigation.navigate("Encyclopedia");
   };
 
+  const handleHome = () => {
+    navigation.navigate("Homepage");
+  };
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [currentProgress, setCurrentProgress] = useState(0)
@@ -95,7 +99,7 @@ const ScanningStartPage = ({ navigation }) => {
   };
   return (
     <View style={styles.main}>
-      <Header onPressCallback={handleEncyclopediaButtonPressed} />
+      <Header onPressCallback={handleEncyclopediaButtonPressed} onPressCallbackHome={handleHome} />
       <ImageBackground
         style={styles.capturedImage}
         source={{ uri: capturedImage.uri }}

@@ -13,18 +13,25 @@ import {
   MaterialIcons,
 } from "@expo/vector-icons";
 
-export default function Header({ onPressCallback }) {
+export default function Header({ onPressCallback, onPressCallbackHome  }) {
   const handlePress = () => {
     console.log("pressed");
     if (onPressCallback) {
       onPressCallback();
     }
   };
+
+  const handleHome = () => {
+    console.log("pressed");
+    if (onPressCallbackHome) {
+      onPressCallbackHome();
+    }
+  };
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.logo}>
-          <TouchableOpacity onPress={handlePress}>
+          <TouchableOpacity onPress={handleHome}>
             <Entypo name="leaf" size={30} color="white" />
           </TouchableOpacity>
         </View>

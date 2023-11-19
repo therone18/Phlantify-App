@@ -32,6 +32,11 @@ const PlantDetails = ({ navigation }) => {
   const handleEncyclopediaButtonPressed = () => {
     navigation.navigate("Encyclopedia");
   };
+
+  const handleHome = () => {
+    navigation.navigate("Homepage");
+  };
+  
   const scrollViewRef = useRef(null);
   const [contentHeight, setContentHeight] = useState(0);
   const [scrollY, setScrollY] = useState(0);
@@ -94,7 +99,7 @@ const PlantDetails = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.main}>
-      <Header onPressCallback={handleEncyclopediaButtonPressed} />
+      <Header onPressCallback={handleEncyclopediaButtonPressed} onPressCallbackHome={handleHome} />
       <ImageBackground
         style={styles.itemContainer}
         source={plantDetails["sourceImage"]}

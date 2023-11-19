@@ -40,9 +40,14 @@ const DeniedPermsPage = ({ navigation }) => {
     navigation.navigate("Encyclopedia");
   };
 
+  const handleHome = () => {
+    navigation.navigate("Homepage");
+  };
+  
+
   return (
     <SafeAreaView style={styles.main}>
-      <Header onPressCallback={handleEncyclopediaButtonPressed} />
+      <Header onPressCallback={handleEncyclopediaButtonPressed} onPressCallbackHome={handleHome} />
       <ImageBackground
         style={styles.itemContainer}
         source={require("../media/mascotCorner.png")}

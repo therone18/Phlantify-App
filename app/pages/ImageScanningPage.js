@@ -22,15 +22,22 @@ const ImageScanningPage = ({ navigation }) => {
     navigation.navigate("Encyclopedia");
   };
 
-  const goback = () =>{
+  const goback = () => {
     navigation.navigate("CameraPage");
-  }
-  const proceed = () =>{
+  };
+  const proceed = () => {
     navigation.navigate("ScanningStartPage", { capturedImage });
-  }
+  };
+
+  const handleHome = () => {
+    navigation.navigate("Homepage");
+  };
   return (
     <View style={styles.main}>
-      <Header onPressCallback={handleEncyclopediaButtonPressed} />
+      <Header
+        onPressCallback={handleEncyclopediaButtonPressed}
+        onPressCallbackHome={handleHome}
+      />
       {capturedImage && (
         <ImageBackground
           style={styles.capturedImage}
@@ -99,7 +106,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    
   },
   goback: {
     width: "50%",
@@ -119,7 +125,6 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 16,
     fontWeight: "400",
-    
   },
 });
 

@@ -21,6 +21,9 @@ const Encyclopedia = ({ navigation }) => {
     console.log(plantID);
     navigation.navigate('PlantDetails', {plantID: plantID})
   };
+  const handleHome = () => {
+    navigation.navigate("Homepage");
+  };
 
   function sortArrayByKey(array, key) {
     return array.sort((a, b) => {
@@ -42,7 +45,7 @@ const Encyclopedia = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.main}>
-      <Header onPressCallback={handleEncyclopediaButtonPressed} />
+      <Header onPressCallback={handleEncyclopediaButtonPressed} onPressCallbackHome={handleHome} />
       <Text style={styles.titletext}>Encyclopedia</Text>
 
       <ScrollView>

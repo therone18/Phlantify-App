@@ -20,13 +20,19 @@ const Homepage = ({ navigation }) => {
 
   const handleEncyclopediaButtonPressed = () => {
     navigation.navigate('Encyclopedia')
+    console.log("Goin Encylopedia")
   }
+
+  const handleHome = () => {
+    navigation.navigate("Homepage");
+    console.log("Goin Home")
+  };
 
 
   return (
     <SafeAreaView style={styles.main}>
       <View></View>
-      <Header onPressCallback={handleEncyclopediaButtonPressed} />
+      <Header onPressCallback={handleEncyclopediaButtonPressed} onPressCallbackHome={handleHome} />
 
       <View style = {styles.containerPlants}>
         <Text style={styles.titletext}>Plants of the Day</Text>
