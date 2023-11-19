@@ -16,6 +16,7 @@ import PlantDetails from './pages/PlantDetails';
 import PlantCarousel from './components/PlantCarousel';
 import DeniedPermsPage from './pages/DeniedPermsPage';
 import CameraLoadingPage from './pages/CameraLoadingPage';
+import ScanningStartPage from './pages/ScanningStartPage';
 
 /*
     TODO:
@@ -42,6 +43,7 @@ const Main = () =>{
                 <Stack.Screen name="PlantDetails" component={PlantDetails} options={{ headerShown: false }}/>
                 <Stack.Screen name="DeniedPermsPage" component={DeniedPermsPage} options={{ headerShown: false }}/>
                 <Stack.Screen name="CameraLoadingPage" component={CameraLoadingPage} options={{ headerShown: false }}/>
+                <Stack.Screen name="ScanningStartPage" component={ScanningStartPage} options={{ headerShown: false }}/>
             </Stack.Navigator>
     )
 }

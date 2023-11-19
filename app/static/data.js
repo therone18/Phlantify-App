@@ -617,3 +617,30 @@ export const historyPlants = [
     thumbnailImage: "201"
   },
 ];
+
+export const sampleResults = [
+  {
+    "progressPercent": 10,
+    "notes": "Scanning Image Structure"
+  },
+  {
+    "progressPercent": 30,
+    "notes": "Starting Model Run"
+  },
+  {
+    "progressPercent": 50,
+    "notes": "Getting Model Results"
+  },
+  {
+    "progressPercent": 70,
+    "notes": "Evaluating Results"
+  },
+  {
+    "progressPercent": 80,
+    "notes": "Done! wrapping up..."
+  },
+  {
+    "progressPercent": 100,
+    "notes": "Done! wrapping up..."
+  }
+]

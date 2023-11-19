@@ -199,31 +199,17 @@ const PlantDetails = ({ navigation }) => {
             </View>
 
             {isFirstActive ? (
-              <View style={{marginTop: 20, marginHorizontal: 10}}>
+              <ScrollView style={{marginTop: 20, marginHorizontal: 10}}>
                 <Text style={styles.plantContentTitle}>General Info</Text>
                 <Text style={styles.plantContentText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                {plantDetails["plantGenInfo"]}
                 </Text>
 
                 <Text style={styles.plantContentTitle}>Plant Description</Text>
                 <Text style={styles.plantContentText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                {plantDetails["plantBotany"]}
                 </Text>
-              </View>
+              </ScrollView>
             ) : (
               <View style={{marginTop: 20, marginHorizontal: 10}}>
                 <Text style={styles.plantContentTitle}>Parts Used: </Text>
