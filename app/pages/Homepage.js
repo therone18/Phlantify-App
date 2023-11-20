@@ -27,6 +27,10 @@ const Homepage = ({ navigation }) => {
     navigation.navigate("Homepage");
     console.log("Goin Home")
   };
+  const handleHistory = () => {
+    navigation.navigate("History");
+    console.log("Goin History")
+  };
 
 
   return (
@@ -43,7 +47,7 @@ const Homepage = ({ navigation }) => {
 
       <View style={styles.containerHistory}>
         <Text style={styles.titletext}>Your Recent Plant Scans</Text>
-        <HistoryCarousel/>
+        <HistoryCarousel onPressHistory={handleHistory}/>
       </View>
 
       

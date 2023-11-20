@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Homepage from "./pages/Homepage";
 import History from "./pages/History";
+import HistoryProfile from './pages/HistoryProfile';
 import CameraPage from "./pages/CameraPage";
 import Encyclopedia from "./pages/Encyclopedia";
 import AboutUs from "./pages/AboutUs";
@@ -17,11 +18,6 @@ import PlantCarousel from './components/PlantCarousel';
 import DeniedPermsPage from './pages/DeniedPermsPage';
 import CameraLoadingPage from './pages/CameraLoadingPage';
 import ScanningStartPage from './pages/ScanningStartPage';
-
-/*
-    TODO:
-        - Dynamically get plants from the database
-*/
 
 
 const Stack = createNativeStackNavigator()
@@ -35,6 +31,7 @@ const Main = () =>{
             <Stack.Navigator>
                 <Stack.Screen name="Homepage" component={Homepage}  options={{ headerShown: false }}/>
                 <Stack.Screen name="History" component={History} options={{ headerShown: false }}/>
+                <Stack.Screen name="HistoryProfile" component={HistoryProfile} options={{ headerShown: false }}/>
                 <Stack.Screen name="CameraPage" component={CameraPage} options={{ headerShown: false }}/>
                 <Stack.Screen name="Encyclopedia" component={Encyclopedia} options={{ headerShown: false }}/>
                 <Stack.Screen name="AboutUs" component={AboutUs} options={{ headerShown: false }}/>
