@@ -10,13 +10,22 @@ import {
   TouchableHighlight,
   TouchableOpacity,
 } from "react-native";
-
+import { plants } from "../static/data";
 import Carousel, { Pagination } from "react-native-snap-carousel";
 import { historyPlants } from "../static/data";
 import { resizeMode } from "deprecated-react-native-prop-types/DeprecatedImagePropType";
 import { LinearGradient } from "expo-linear-gradient";
+import { selectedPlant } from "../static/data";
 
-export default function HistoryCarousel() {
+export default function HistoryCarousel({onPressHistory}) {
+  const handleHistory = (plantSelection) => {
+
+    //console.log("History Carousel Item Pressed");
+    if (onPressHistory) {
+      onPressHistory();
+    }
+};
+console.log(plants[0]["plantName_Family"])
   screenWidth = Math.round(Dimensions.get("window").width);
   const indexChecker = (index) => {
     if (index == 3) {
@@ -31,6 +40,7 @@ export default function HistoryCarousel() {
     activeSlide: 0,
   };
 
+  var count = 0
   _renderItem = ({ item }) => {
     const imagePaths = {
       7: require("../media/7.jpg"),
@@ -43,17 +53,16 @@ export default function HistoryCarousel() {
 
     const imageSource = imagePaths[item.thumbnailImage];
 
-    const handlePress = () => {
-        console.log("History Carousel Item Pressed");
-    };
+    count++;
+    console.log(count);
 
     return (
       <TouchableHighlight
         underlayColor="#F9EBC7"
-        onPress={handlePress}
+        onPress={handleHistory}
         style={styles.backgroundImage}
       >
-        <ImageBackground source={imageSource} style={styles.backgroundImage}>
+        <ImageBackground source={plants[count - 1]["sourceImage"]} style={styles.backgroundImage}>
           <LinearGradient
             colors={["#C4661FCC", "#00000000"]}
             start={{ x: 0, y: 1 }}
@@ -61,13 +70,15 @@ export default function HistoryCarousel() {
             style={styles.gradient}
           >
             <View style={styles.plantDetails}>
-              <Text style={styles.title}>{item.localName}</Text>
-              <Text style={styles.subtitle}>{item.scientificName}</Text>
+              <Text style={styles.title}>{plants[count - 1]["plantName_Local"]}</Text>
+              <Text style={styles.subtitle}>{plants[count - 1]["plantName_Family"]}</Text>
             </View>
           </LinearGradient>
         </ImageBackground>
       </TouchableHighlight>
     );
+
+    
   };
 
   return (

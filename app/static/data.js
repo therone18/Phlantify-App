@@ -581,41 +581,34 @@ export const plantsOfTheDay =[
 
 export const historyPlants = [
   {
-    scientificName: "Chromolaena odorata (L.) R.M.King & H.Rob",
-    localName: "Siamweed/ Hagunoy",
-    partsUsed: "Leaves",
-    modePrep: "Crushed and drink the extracted juice ",
-    medUses: "Stomach ache",
-    thumbnailImage: "59"
-  },{
-    scientificName: "Asteraceae Artemisia vulgaris L",
-    localName: "Mugwort/Damong Maria",
-    partsUsed: "Leaves",
-    modePrep: "Crushed and drink the extracted juice ",
-    medUses: "Stomach ache",
-    thumbnailImage: "102"
-  },{
-    scientificName: "Alliaceae Allium odorum Ln",
-    localName: "Mango/Mangga",
-    partsUsed: "Leaves",
-    modePrep: "Crushed and drink the extracted juice ",
-    medUses: "Stomach ache",
-    thumbnailImage: "32"
-  },{
-    scientificName: "Asteraceae Artemisia vulgaris L",
-    localName: "Chinese chives/ Kutchai ",
-    partsUsed: "Leaves",
-    modePrep: "Crushed and drink the extracted juice ",
-    medUses: "Stomach ache",
-    thumbnailImage: "65"
-  },{
-    scientificName: "Chromolaena odorata (L.) R.M.King & H.Rob",
-    localName: "Siamweed/ Hagunoy",
-    partsUsed: "Leaves",
-    modePrep: "Crushed and drink the extracted juice ",
-    medUses: "Stomach ache",
-    thumbnailImage: "201"
+    plantID: "PI33356",
+    dateScanned: "YYYY-MM-DD_00:00-AM",
+    accuracy: 80,
+    historyImage: require("../media/PI33356.jpg"),
+   
   },
+  {
+    plantID: "PI91941",
+    dateScanned: "YYYY-MM-DD_00:00-AM",
+    accuracy: 80,
+    historyImage: require("../media/PI33356.jpg"),
+   
+  },
+  {
+    plantID: "PI24886",
+    dateScanned: "YYYY-MM-DD_00:00-AM",
+    accuracy: 80,
+    historyImage: require("../media/PI33356.jpg"),
+    
+  },
+  {
+    plantID: "PI55576",
+    dateScanned: "YYYY-MM-DD_00:00-AM",
+    accuracy: 80,
+    historyImage: require("../media/PI33356.jpg"),
+  
+  },
+  
 ];
 
 export const sampleResults = [
