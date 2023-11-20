@@ -79,7 +79,7 @@ const HistoryProfile = ({ navigation }) => {
 
   const scrollToBottom = () => {
     if (scrollViewRef.current) {
-      scrollViewRef.current.scrollToEnd({ animated: true });
+      scrollViewRef.current.scrollToEnd({ animated: false });
     }
   };
 
@@ -165,7 +165,7 @@ const HistoryProfile = ({ navigation }) => {
             </View>
 
             <View
-              style={{ width: "100%", alignItems: "center", height: 60 }}
+              style={{ width: "100%", alignItems: "center", height: 30 }}
             ></View>
           </LinearGradient>
           <View style={styles.button}>
