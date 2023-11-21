@@ -157,7 +157,7 @@ export const colors = StyleSheet.create({
     black: {
         color: "#1f1f1f"
     },
-    black: {
+    white: {
         color: "#fdfdfd"
     },
 

@@ -32,15 +32,11 @@ export default function Header({ onPressCallback, onPressCallbackHome  }) {
       <View style={styles.header}>
         <View style={styles.logo}>
           <TouchableOpacity onPress={handleHome}>
-            <Entypo name="leaf" size={30} color="white" />
+            <Entypo name="leaf" size={30} color="#c4661f" />
           </TouchableOpacity>
         </View>
 
-        <View style={styles.topmenu}>
-          <TouchableOpacity onPress={handlePress}>
-            <FontAwesome5 name="book" size={30} color="white" />
-          </TouchableOpacity>
-        </View>
+        
       </View>
     </View>
   );
@@ -50,7 +46,7 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: "8%",
-    backgroundColor: "#C4661F",
+    backgroundColor: "#f9ecc9",
     justifyContent: "center",
   },
   header: {
