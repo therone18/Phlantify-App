@@ -19,6 +19,7 @@ import { useRoute } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
 import React, { useRef, useState } from "react";
 import MenuBar from "../components/MenuBar";
+import { globalText } from "../static/styleAssets";
 const screenHeight = Dimensions.get("window").height;
 console.log(screenHeight);
 const AboutUs = ({ navigation }) => {
@@ -53,8 +54,8 @@ const AboutUs = ({ navigation }) => {
 
       <ScrollView style={{ flex: 1, paddingHorizontal: 30 }}>
         <View style={styles.contentContainer}>
-          <Text>Disclaimer</Text>
-          <Text>
+          <Text style={globalText.heading2Green}>Disclaimer</Text>
+          <Text style={globalText.paragraph1Orange}>
             discussions on medicinal plants are for educational purposes only.
             The team, including Phlantie, does not endorse their use. We aim to
             promote awareness of Philippine medicinal plants. Any actual use
@@ -63,7 +64,7 @@ const AboutUs = ({ navigation }) => {
         </View>
 
         <View style={styles.contentContainer}>
-          <Text>About The Team</Text>
+          <Text style={globalText.heading2Green}>About The Team</Text>
           <View>
             <View style={{ alignItems: "center" }}>
               <View style={styles.imageContainer}>
@@ -73,9 +74,9 @@ const AboutUs = ({ navigation }) => {
                   source={require("../media/theroneImage.jpg")}
                 />
               </View>
-              <Text>Therone Jhoseff Almadin</Text>
-              <Text>Lead App and Project Developer</Text>
-              <Text>Visual Artist</Text>
+              <Text style={globalText.heading3Green}>Therone Jhoseff Almadin</Text>
+              <Text style={globalText.paragraph1Orange}>Lead App and Project Developer</Text>
+              <Text style={globalText.paragraph1Orange}>Visual Artist</Text>
               
             </View>
 
@@ -87,7 +88,7 @@ const AboutUs = ({ navigation }) => {
                   source={require("../media/nathanImage.jpg")}
                 />
               </View>
-              <Text>Rafael Nathan Ang</Text>
+              <Text style={globalText.heading2Green}>Rafael Nathan Ang</Text>
               <Text>Developer</Text>
             </View>
 
@@ -99,17 +100,21 @@ const AboutUs = ({ navigation }) => {
                   source={require("../media/harrietteImage.jpg")}
                 />
               </View>
-              <Text>Harriette Haw</Text>
-              <Text>UI/UX Designer</Text>
+              <Text style={globalText.heading2Green}>Harriette Haw</Text>
+              <Text style={globalText.paragraph1Orange}>UI/UX Designer</Text>
             </View>
 
             <View style={{ alignItems: "center" }}>
               <View style={styles.imageContainer}>
-                <Text>IMAGE HERE</Text>
+              <Image
+                  style={{ width: 200, height: 200 }}
+                  resizeMode="contain"
+                  source={require("../media/phlantySmilingPFP.png")}
+                 />
               </View>
-              <Text>Phlantie</Text>
-              <Text>Project Leader</Text>
-              <Text>Phlantify App Guide</Text>
+              <Text style={globalText.heading2Green}>Phlantie</Text>
+              <Text style={globalText.paragraph1Orange}>Project Leader</Text>
+              <Text style={globalText.paragraph1Orange}>Phlantify App Guide</Text>
             </View>
           </View>
         </View>
@@ -137,7 +142,7 @@ const styles = StyleSheet.create({
     paddingVertical: 50,
   },
   imageContainer: {
-    backgroundColor: "red",
+    backgroundColor: "#748c5b",
     height: 200,
     width: 200,
     marginVertical: 20,
