@@ -17,6 +17,7 @@ import { plants } from "../static/data";
 import { useRoute } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
 import React, { useRef, useState } from "react";
+import MenuBar from "../components/MenuBar";
 const screenHeight = Dimensions.get("window").height;
 console.log(screenHeight);
 const PlantDetails = ({ navigation }) => {
@@ -29,12 +30,26 @@ const PlantDetails = ({ navigation }) => {
     }
   });
 
+  const handleCameraButtonPressed = () => {
+    navigation.navigate("CameraPage");
+  };
+
   const handleEncyclopediaButtonPressed = () => {
     navigation.navigate("Encyclopedia");
+    console.log("Goin Encylopedia");
   };
 
   const handleHome = () => {
     navigation.navigate("Homepage");
+    console.log("Goin Home");
+  };
+  const handleHistory = () => {
+    navigation.navigate("History");
+    console.log("Goin History");
+  };
+  const handleCredits = () => {
+    navigation.navigate("AboutUs");
+    console.log("Goin AboutUs");
   };
   
   const scrollViewRef = useRef(null);
@@ -232,6 +247,15 @@ const PlantDetails = ({ navigation }) => {
           </View>
         </ScrollView>
       </ImageBackground>
+      <View>
+        <MenuBar
+          onPressHome={handleHome}
+          onPressEncyclopedia={handleEncyclopediaButtonPressed}
+          onPressScan={handleCameraButtonPressed}
+          onPressHistory={handleHistory}
+          onCredits={handleCredits}
+        />
+      </View>
     </SafeAreaView>
   );
 };
@@ -300,7 +324,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   gradient: {
-    height: screenHeight - 150,
+    height: screenHeight - 135,
     justifyContent: "flex-end", // Items at the bottom
     alignItems: "flex-start",
   },
