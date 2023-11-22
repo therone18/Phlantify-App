@@ -18,10 +18,12 @@ import { historyPlants, plants } from "../static/data";
 import { useRoute } from "@react-navigation/native";
 import { MaterialIcons, AntDesign } from "@expo/vector-icons";
 import React, { useRef, useState } from "react";
+import { globalText } from "../static/styleAssets";
 const screenHeight = Dimensions.get("window").height;
-console.log(screenHeight);
+import MenuBar from "../components/MenuBar";
 
 const HistoryProfile = ({ navigation }) => {
+  
   const moment = require("moment");
   function findDateTime(dateTime) {
     // Parse the date string using the format "YYYY-MM-DD_HH:mm-A"
@@ -43,12 +45,26 @@ const HistoryProfile = ({ navigation }) => {
     }
   });
 
+  const handleCameraButtonPressed = () => {
+    navigation.navigate("CameraPage");
+  };
+
   const handleEncyclopediaButtonPressed = () => {
     navigation.navigate("Encyclopedia");
+    console.log("Goin Encylopedia");
   };
 
   const handleHome = () => {
     navigation.navigate("Homepage");
+    console.log("Goin Home");
+  };
+  const handleHistory = () => {
+    navigation.navigate("History");
+    console.log("Goin History");
+  };
+  const handleCredits = () => {
+    navigation.navigate("AboutUs");
+    console.log("Goin AboutUs");
   };
 
   const scrollViewRef = useRef(null);
@@ -101,6 +117,8 @@ const HistoryProfile = ({ navigation }) => {
     usedFor = plantDetails["plantMedUse"];
   }
 
+  
+
   const [isFirstActive, setIsFirstActive] = useState(true);
 
   const handleFirstButtonPress = () => {
@@ -122,11 +140,20 @@ const HistoryProfile = ({ navigation }) => {
     "% sure that this was a " +
     plantDetails["plantName_Local"];
 
-    const handlePress = (plantID) => {
-      console.log(plantID);
-      navigation.navigate('PlantDetails', {plantID: plantID})
-    };
+  const handlePress = (plantID) => {
+    console.log(plantID);
+    navigation.navigate("PlantDetails", { plantID: plantID });
+  };
   scrollToBottom();
+  function findDateTime(dateTime){
+    // Parse the date string using the format "YYYY-MM-DD_HH:mm-A"
+    let date = moment(dateTime, "YYYY-MM-DD_HH:mm-A");
+
+    // Format the date into a more readable format
+    let formattedDate = date.format("MMMM Do YYYY, h:mm A");
+
+    return formattedDate;
+  }
   return (
     <SafeAreaView style={styles.main}>
       <Header
@@ -175,28 +202,68 @@ const HistoryProfile = ({ navigation }) => {
           </View>
 
           <View style={styles.plantPanel}>
-            <View style={{ marginTop: 20, marginHorizontal: 10 }}>
-              <View>
-                <Text>Scanned Plant</Text>
+            <View style={{ marginHorizontal: 10 }}>
+              <View style={{ marginBottom: 24 }}>
+                <Text style={globalText.heading2Green}>Scanned Plant</Text>
               </View>
               <View style={{ flexDirection: "row" }}>
+                <View style={{ width: "40%", justifyContent: "center" }}>
+                  <View>
+                    <Text
+                      style={[
+                        globalText.paragraph1Green,
+                        { fontWeight: "bold", marginBottom: 4 },
+                      ]}
+                    >
+                      Accuracy:
+                    </Text>
+                    <Text
+                      style={[globalText.paragraph2Orange, , { marginTop: 4 }]}
+                    >
+                      {phlantyAccuracyResult}
+                    </Text>
+                  </View>
 
-                <View style={{ width: "40%", justifyContent: "center"}}>
-                  <Text>Accuracy:</Text>
-                  <Text>{phlantyAccuracyResult}</Text>
-                  <TouchableHighlight
-                    underlayColor="white" // Set the color when the touch is active
+                  
+
+                  <View>
+                    <Text
+                      style={[
+                        globalText.paragraph1Green,
+                        { fontWeight: "bold", marginBottom: 4 },
+                      ]}
+                    >
+                      Date Scanned:
+                    </Text>
+                    <Text
+                      style={[globalText.paragraph2Orange, , { marginTop: 4 }]}
+                    >
+                      {findDateTime(historyDetails.dateScanned)}
+                    </Text>
+                    
+                  </View>
+
+                  <TouchableOpacity
+                     // Set the color when the touch is active
                     activeOpacity={0.6}
                     onPress={() => handlePress(plantID)}
                   >
-                    <View style={{ backgroundColor: "#748c5b", marginRight: 10, padding:10, flexDirection:"row", justifyContent:"space-between"}}>
-                      <Text style={{color:"white"}}>View Plant</Text>
-                      <View style={{marginRight: 10}}>
-                      <AntDesign name="arrowright" size={24} color="white" />
+                    <View
+                      style={{
+                        backgroundColor: "#748c5b",
+                        marginRight: 10,
+                        marginTop: 20,
+                        padding: 10,
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Text style={{ color: "white" }}>View Plant</Text>
+                      <View style={{ marginRight: 10 }}>
+                        <AntDesign name="arrowright" size={24} color="white" />
                       </View>
-                      
                     </View>
-                  </TouchableHighlight>
+                  </TouchableOpacity>
                 </View>
                 <View
                   style={{
@@ -216,6 +283,15 @@ const HistoryProfile = ({ navigation }) => {
           </View>
         </ScrollView>
       </ImageBackground>
+      <View>
+        <MenuBar
+          onPressHome={handleHome}
+          onPressEncyclopedia={handleEncyclopediaButtonPressed}
+          onPressScan={handleCameraButtonPressed}
+          onPressHistory={handleHistory}
+          onCredits={handleCredits}
+        />
+      </View>
     </SafeAreaView>
   );
 };

@@ -52,6 +52,11 @@ const Homepage = ({ navigation }) => {
     console.log("Goin AboutUs");
   };
 
+  const handleHistoryProfile = (plantID, historyDetails) => {
+    console.log(plantID);
+    navigation.navigate('HistoryProfile', {plantID: plantID, historyDetails: historyDetails})
+  };
+
   return (
     <SafeAreaView style={styles.main}>
       <View></View>
