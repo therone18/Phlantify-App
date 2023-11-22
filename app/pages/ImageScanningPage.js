@@ -14,7 +14,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "../components/Header";
 import { useRoute } from "@react-navigation/native";
 import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
-
+import { globalText } from "../static/styleAssets";
 const ImageScanningPage = ({ navigation }) => {
   const route = useRoute();
   const { capturedImage } = route.params;
@@ -44,25 +44,54 @@ const ImageScanningPage = ({ navigation }) => {
           source={{ uri: capturedImage.uri }}
           resizeMode="cover"
         >
-          <View style={styles.options}>
-            <View style={styles.optionItems}>
-              <TouchableHighlight
-                style={styles.goback}
-                underlayColor="#C4661F" // Set the color when the touch is active
-                activeOpacity={0.6}
-                onPress={goback}
-              >
-                <Text style={styles.buttonText}>Go back to camera</Text>
-              </TouchableHighlight>
+          <View style={styles.confirmationPanel1}></View>
 
-              <TouchableHighlight
-                style={styles.proceed}
-                underlayColor="#C4661F" // Set the color when the touch is active
-                activeOpacity={0.6}
-                onPress={proceed}
-              >
-                <Text style={styles.buttonText}>Begin Scan</Text>
-              </TouchableHighlight>
+          <View style={styles.confirmationPanel2}>
+            <View style={styles.optionsPanel}>
+              <Text style={[globalText.heading3Orange, {marginHorizontal:15}]}>
+                Is this the picture you want scanned?
+              </Text>
+            </View>
+
+            <View style={styles.optionsPanel}>
+              <TouchableOpacity activeOpacity={0.6} onPress={proceed}>
+                <View
+                  style={{
+                    backgroundColor: "#748c5b",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginLeft: 10,
+                    marginBottom : 8,
+                  }}
+                >
+                  <Text
+                    style={[globalText.paragraph1White, {  paddingVertical: 25 }]}
+                  >
+                    Proceed to Scan
+                  </Text>
+                </View>
+              </TouchableOpacity>
+
+              <TouchableOpacity activeOpacity={0.6} onPress={goback}>
+                <View
+                  style={{
+                    backgroundColor: "#fcfce4",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginLeft: 10,
+                    marginTop : 8
+                  }}
+                >
+                  <Text
+                    style={[
+                      globalText.paragraph1Orange,
+                      {  paddingVertical: 25 },
+                    ]}
+                  >
+                    Retake Image
+                  </Text>
+                </View>
+              </TouchableOpacity>
             </View>
           </View>
         </ImageBackground>
@@ -80,6 +109,23 @@ const styles = StyleSheet.create({
   },
   swtichCam: {
     backgroundColor: "#C4661F",
+  },
+  confirmationPanel1: {
+    height: "70%",
+    alignContent: "flex-end",
+  },
+  confirmationPanel2: {
+    backgroundColor: "#f9ecc9cc",
+    height: "30%",
+    alignContent: "flex-end",
+    width: "100%",
+    justifyContent: "space-between",
+    flexDirection: "row",
+  },
+  optionsPanel: {
+    
+    justifyContent: "center",
+    width: "50%",
   },
   text: {
     fontSize: 16,
@@ -100,6 +146,7 @@ const styles = StyleSheet.create({
     marginLeft: 36,
     justifyContent: "flex-end",
     alignItems: "center",
+    backgroundColor: "red",
   },
   optionItems: {
     flexDirection: "row",

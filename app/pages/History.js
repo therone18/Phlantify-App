@@ -13,18 +13,36 @@ import { imagePaths } from "../static/encylopediaImageSourcing";
 import { LinearGradient } from "expo-linear-gradient";
 import { plants } from "../static/data";
 import { historyPlants } from "../static/data";
+import MenuBar from "../components/MenuBar";
 const History = ({ navigation }) => {
-  const handleEncyclopediaButtonPressed = () => {
-    navigation.navigate("Encyclopedia");
+  const handleCameraButtonPressed = () => {
+    navigation.navigate("CameraPage");
   };
 
+  const handleEncyclopediaButtonPressed = () => {
+    navigation.navigate("Encyclopedia");
+    console.log("Goin Encylopedia");
+  };
+
+  const handleHome = () => {
+    navigation.navigate("Homepage");
+    console.log("Goin Home");
+  };
+  const handleHistory = () => {
+    navigation.navigate("History");
+    console.log("Goin History");
+  };
+  const handleCredits = () => {
+    navigation.navigate("AboutUs");
+    console.log("Goin AboutUs");
+  };
   const handlePress = (plantID, historyDetails) => {
     console.log(plantID);
     navigation.navigate('HistoryProfile', {plantID: plantID, historyDetails: historyDetails})
   };
-  const handleHome = () => {
-    navigation.navigate("Homepage");
-  };
+  
+
+  
 
  
   function findPlantName(plantID){
@@ -82,6 +100,15 @@ const History = ({ navigation }) => {
 
         ))}
       </ScrollView>
+      <View>
+        <MenuBar
+          onPressHome={handleHome}
+          onPressEncyclopedia={handleEncyclopediaButtonPressed}
+          onPressScan={handleCameraButtonPressed}
+          onPressHistory={handleHistory}
+          onCredits={handleCredits}
+        />
+      </View>
     </SafeAreaView>
   );
 };
