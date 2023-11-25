@@ -8,6 +8,7 @@ import {
   Image,
   TouchableOpacity
 } from "react-native";
+import React, { useEffect, useState } from 'react';
 import PlantCarousel from "../components/PlantCarousel";
 import HistoryCarousel from "../components/HistoryCarousel";
 import Header from "../components/Header";
@@ -22,6 +23,8 @@ import {
   Feather,
 } from "@expo/vector-icons";
 
+import axios from 'axios';
+
 
 //Homepage should show history of previously identified plants -
 //Homepage should show panels of plants and their descriptions - /
@@ -30,6 +33,8 @@ import {
 //Should Always show the header
 
 const Homepage = ({ navigation }) => {
+  
+
   const handleCameraButtonPressed = () => {
     navigation.navigate("CameraPage");
   };

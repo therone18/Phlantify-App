@@ -22,6 +22,15 @@ const screenHeight = Dimensions.get("window").height;
 const ScanningStartPage = ({ navigation }) => {
   const route = useRoute();
   const { capturedImage } = route.params;
+
+
+  const sendPicture = async () => {
+    console.log("Sending picture to api")
+    
+  };
+
+
+
   const handleEncyclopediaButtonPressed = () => {
     navigation.navigate("Encyclopedia");
   };
@@ -58,10 +67,12 @@ const ScanningStartPage = ({ navigation }) => {
   const renderContentBasedOnProgress = (progress) => {
     switch (progress) {
       case 10:
+        
         return (
           <View style={{ backgroundColor: "#F9EBC7BF", height: "10%" }}></View>
         );
       case 30:
+        sendPicture()
         return (
           <View style={{ backgroundColor: "#F9EBC7BF", height: "30%" }}></View>
         );
@@ -96,6 +107,7 @@ const ScanningStartPage = ({ navigation }) => {
   const scanComplete = () => {
     console.log("Scan complete");
     scrollToBottom();
+
   };
   return (
     <View style={styles.main}>
